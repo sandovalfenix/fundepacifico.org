@@ -2,52 +2,52 @@ import React, { useEffect } from "react";
 
 const whatWeDoItems = [
   {
-    tag: "Education",
+    tag: "Vivienda digna",
     heading:
-      "Education is the cornerstone of human capital development and a powerful force for lasting transformation.",
-    body: "Over the past 30 years, Higherlife Foundation has supported more than 400,000 learners -from early childhood to doctoral studies. Through targeted scholarships, digital learning, and leadership development, we expand access, promote equity, and strengthen outcomes across every stage of learning.",
-    href: "https://higherlifefoundation.org/what-we-do/education",
-    label: "More information",
-    alt: "Education - Image",
+      "Gestionamos proyectos de vivienda digna para comunidades vulnerables.",
+    body: "Promovemos soluciones habitacionales con alto componente social, articulando recursos, aliados y participacion comunitaria para mejorar la calidad de vida en los territorios.",
+    href: "/what-we-do#vivienda-digna",
+    label: "Mas informacion",
+    alt: "Vivienda digna",
     src: "/assets/23e65db63e52ff7906f61a2cfbfae23d15c33892-1404x1976.avif",
   },
   {
-    tag: "Global Health",
+    tag: "Capacitacion y formacion",
     heading:
-      "Health restores dignity and unlocks the potential within every person, family, and community.",
-    body: "From maternal care that ensures safe births and healthy families to community-led efforts that eliminate preventable diseases, Higherlife Foundation works to expand access, promote equity, and improve health outcomes for Zimbabwe’s most vulnerable communities.",
-    href: "https://higherlifefoundation.org/what-we-do/global-health",
-    label: "More Information",
-    alt: "Global Health - Image",
+      "Fortalecemos capacidades mediante educacion, talleres y procesos formativos.",
+    body: "Realizamos talleres, diplomados, seminarios, proyectos de investigacion y acompanamiento para ampliar oportunidades educativas y comunitarias.",
+    href: "/what-we-do#educacion-formacion",
+    label: "Mas informacion",
+    alt: "Capacitacion y formacion",
     src: "/assets/ae85e1f1fd04e4429416977427d2431f88682a1b-1404x1976.avif",
   },
   {
-    tag: "Sustainable Livelihoods",
+    tag: "Emprendimiento y agroindustria",
     heading:
-      "Sustainable livelihoods give families the means to prosper and communities the power to thrive.",
-    body: "At Higherlife Foundation, we invest in livelihoods that move communities from dependence to self-reliance. Our programmes strengthen food systems, build institutional resilience, and equip people with the skills and resources to thrive in changing climates.",
-    href: "https://higherlifefoundation.org/what-we-do/sustainable-livelihoods",
-    label: "More Information",
-    alt: "Sustainable Livelihoods - Image",
+      "Impulsamos unidades productivas sostenibles para asociaciones comunitarias.",
+    body: "Asesoramos emprendimientos agropecuarios, agroindustriales y de servicios para que cooperativas y comunidades generen ingresos y desarrollo local.",
+    href: "/what-we-do#emprendimiento-agroindustria",
+    label: "Mas informacion",
+    alt: "Emprendimiento y agroindustria",
     src: "/assets/f3ff4267f742dcc389da2b428da399a461005fc5-1404x1976.jpeg",
   },
   {
-    tag: "Disaster Relief & Preparedness",
-    heading: "Preparedness protects what matters most - lives, livelihoods, and hope.",
-    body: "At Higherlife Foundation, we build the systems, infrastructure, and local capacity needed to anticipate, withstand, and recover from crises.",
-    href: "https://higherlifefoundation.org/what-we-do/disaster-relief-and-preparedness",
-    label: "More Information",
-    alt: "Disaster Relief - Image",
+    tag: "Redes de apoyo",
+    heading: "Conectamos comunidades, cooperativas, instituciones y aliados.",
+    body: "Conformamos redes de apoyo para potenciar acciones sociales, ampliar oportunidades y fortalecer el tejido comunitario en cada territorio.",
+    href: "/what-we-do#redes-apoyo",
+    label: "Mas informacion",
+    alt: "Redes de apoyo",
     src: "/assets/b2a99047570a6606e1e7009d4d62a630f705fa9d-1404x1976.avif",
   },
   {
-    tag: "Legacy",
+    tag: "Obras civiles",
     heading:
-      "Legacy preserves our past and ignites pride for the future. When we protect culture, we strengthen identity and inspire generations to come.",
-    body: "At Higherlife Foundation, we work to protect, modernise, and celebrate the nation’s cultural heritage so that museums, galleries, and monuments remain vibrant spaces of learning, pride, and inspiration.",
-    href: "https://higherlifefoundation.org/what-we-do/legacy",
-    label: "More Information",
-    alt: "Legacy - Image",
+      "Gestionamos infraestructura social al servicio de las comunidades.",
+    body: "Acompanamos obras deportivas, culturales, educativas, comunitarias, religiosas y viales cuando responden a necesidades sociales y al objeto de la fundacion.",
+    href: "/what-we-do#obras-civiles",
+    label: "Mas informacion",
+    alt: "Obras civiles comunitarias",
     src: "/assets/529ffb690991e870fd14f04b26ea087e27c84d9f-1404x1976.avif",
   },
 ];
@@ -91,7 +91,7 @@ export default function Home({
 
     const heroHeading = document.querySelector("h1.primary_heading__ikH5_");
     const heroHeadingText =
-      "Building Africa’s future. One person, one community, one purpose at a time.";
+      "Promovemos derechos, oportunidades y desarrollo para el Pacifico colombiano.";
     let heroSplitFrame = 0;
     let heroSplitDisposed = false;
 
@@ -442,11 +442,11 @@ export default function Home({
       document.querySelectorAll(".callToAction_button__JtFqK"),
     );
     const ctaHandler = (event) => {
-      if (event.currentTarget.textContent?.includes("Get Involved"))
+      if (event.currentTarget.textContent?.includes("Aliarse"))
         onOpenGetInvolved();
     };
     ctaButtons.forEach((button) => {
-      if (button.textContent?.includes("Get Involved"))
+      if (button.textContent?.includes("Aliarse"))
         button.addEventListener("click", ctaHandler);
     });
 
@@ -498,21 +498,21 @@ export default function Home({
             >
               <path fill="#fff" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>Welcome</h2>
+            <h2>Bienvenidos</h2>
           </div>
           <h1
             className="primary_heading__ikH5_ text_xxl__KYbm5 split"
-            aria-label="Building Africa’s future. One person, one community, one purpose at a time."
+            aria-label="Promovemos derechos, oportunidades y desarrollo para el Pacifico colombiano."
           >
-            Building Africa’s future. One person, one community, one purpose at
-            a time.
+            Promovemos derechos, oportunidades y desarrollo para el Pacifico
+            colombiano.
           </h1>
           <div className="primary_buttonWrap__RHtZM">
             <a
               className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7 ani_fadeUp20__qwydY"
               style={{ "--delay": "0.75s" }}
               target="_self"
-              href="https://higherlifefoundation.org/about"
+              href="/what-we-do"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -526,7 +526,7 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>What We Do</span>
+              <span>Que hacemos</span>
             </a>
           </div>
         </div>
@@ -543,26 +543,26 @@ export default function Home({
             >
               <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>About Us</h2>
+            <h2>Quienes somos</h2>
           </div>
           <div className="teamBlock_heading__udUw9 text_xxl__KYbm5">
             <h3 style={{ lineHeight: "1" }}>
-              Higherlife <br />
-              <span className="text_grey__nqMgS">Foundation</span>
+              FUNDEPACIFICO <br />
+              <span className="text_grey__nqMgS">ONG Internacional</span>
             </h3>
           </div>
         </div>
         <div className="teamBlock_content__qE_mZ">
           <div className="teamBlock_body__CaNZb text_p__79svp text_dgrey__9S_lE">
             <p>
-              Higherlife Foundation is a private foundation grounded in
-              Christian values and guided by a belief in the transformative
-              power of education, health, and thriving communities.
+              Somos una organizacion sin animo de lucro que trabaja por los
+              derechos y el bienestar de comunidades negras, afrocolombianas,
+              raizales y palenqueras.
             </p>
             <p>
-              Founded in 1996 by Orlando Arrechea Orobio, the foundation was
-              established with a clear purpose: to uplift the most vulnerable
-              and help spark hope where it was needed most.
+              Nacimos en Buenaventura con vocacion comunitaria, gestionando
+              programas sociales, ambientales, educativos y productivos para
+              poblaciones vulnerables.
             </p>
           </div>
           <a
@@ -609,24 +609,23 @@ export default function Home({
         <div className="teamBlock_bottom__lMltZ">
           <div className="teamBlock_heading__udUw9 text_sh__zU3LH">
             <p>
-              Today, that spark has grown into a movement. With investments
-              across several African countries, Higherlife Foundation stands as
-              a catalyst for progress – working to nurture potential, expand
-              opportunity, and build pathways out of poverty.
+              Trabajamos con comunidades, cooperativas, instituciones y aliados
+              para formular y ejecutar proyectos sostenibles que respondan a la
+              realidad social, cultural y economica de cada territorio.
             </p>
           </div>
           <div className="teamBlock_body__CaNZb text_p__79svp text_dgrey__9S_lE">
             <p>
-              From scholarships that unlock doors for young minds, to healthcare
-              solutions that protect mothers and children, to climate-smart
-              farming initiatives that strengthen rural livelihoods – our work
-              delivers bold action and tangible results.
+              Nuestra labor integra vivienda digna, educacion, salud,
+              seguridad alimentaria, cultura, deporte, emprendimiento,
+              agroindustria, obras civiles e innovacion para fortalecer el
+              desarrollo comunitario.
             </p>
           </div>
           <a
             className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7 teamBlock_button__ICL4O"
             target="_self"
-            href="https://higherlifefoundation.org/about"
+            href="/about"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -640,7 +639,7 @@ export default function Home({
                 d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
               ></path>
             </svg>
-            <span>Our Story</span>
+            <span>Nuestra historia</span>
           </a>
         </div>
       </section>
@@ -658,10 +657,10 @@ export default function Home({
                 <path fill="#ffffff" d="M0 0h8v8H0z"></path>
               </svg>
               <h2 data-slide-index="0" className="gallery_slideActive__SbygQ">
-                2026 JNS Winners
+                Portafolio 2026
               </h2>
               <h2 data-slide-index="1" className="gallery_slideHidden__vJbPa">
-                Book Launch
+                Objeto social
               </h2>
             </div>
             <p className="gallery_index__wo_KH text_tag__kpI4A">
@@ -737,14 +736,14 @@ export default function Home({
               >
                 <div className="text_xl__DB7xZ">
                   <p>
-                    Congratulations to all successful Joshua Nkomo Scholarship
-                    recipients.
+                    Servicios sociales para comunidades con enfoque etnico y
+                    territorial.
                   </p>
                 </div>
               </div>
               <div data-slide-index="1" className="gallery_slideItem__bAaOy">
                 <div className="text_xl__DB7xZ">
-                  <p>Honouring Decades of Lives Transformed</p>
+                  <p>Derechos, inclusion y desarrollo sostenible.</p>
                 </div>
               </div>
             </div>
@@ -755,23 +754,19 @@ export default function Home({
               >
                 <div className="text_p__79svp">
                   <p>
-                    If you have been awarded the 2026 Joshua Nkomo Scholarship,
-                    you can access your official scholarship offer letter
-                    through the portal below. If you are visiting to learn more
-                    about the programme, explore the information available on
-                    this page.
+                    Nuestro portafolio reune programas de vivienda digna,
+                    educacion, salud, seguridad alimentaria, recreacion,
+                    cultura, deporte, agroindustria, innovacion y obras
+                    comunitarias.
                   </p>
                 </div>
               </div>
               <div data-slide-index="1" className="gallery_slideItem__bAaOy">
                 <div className="text_p__79svp">
                   <p>
-                    And Still We Rise” is a powerful reflection on decades of
-                    transformative impact led by Higherlife Foundation. It
-                    captures the vision, resilience, and unwavering commitment
-                    to uplifting lives across Africa and beyond. This book
-                    offers readers a deeply personal and inspiring look into a
-                    movement built on faith, compassion, and action.
+                    Trabajamos para promover los derechos humanos, territoriales,
+                    sociales, economicos, culturales, ambientales y politicos de
+                    comunidades negras, afrocolombianas, raizales y palenqueras.
                   </p>
                 </div>
               </div>
@@ -783,8 +778,8 @@ export default function Home({
               >
                 <a
                   className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7"
-                  target="_blank"
-                  href="https://applications.higherlifefoundation.org/jns/portal"
+                  target="_self"
+                  href="/what-we-do"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -798,18 +793,18 @@ export default function Home({
                       d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                     ></path>
                   </svg>
-                  <span>Access Offer Letter</span>
+                  <span>Ver servicios</span>
                 </a>
               </div>
               <div data-slide-index="1" className="gallery_slideItem__bAaOy">
                 <p className="gallery_buttonGroupLabel__uGXkV text_xs__SekJ2">
-                  Click below to Order Your Copy
+                  Consulte el portafolio institucional
                 </p>
                 <div className="gallery_buttonGroup__CpSbB">
                   <a
                     className="imageButton_root__ZYop_"
-                    target="_blank"
-                    href="https://www.amazon.co.uk/dp/B0DMVH1QJN"
+                    target="_self"
+                    href="/resources"
                   >
                     <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
                       <img
@@ -825,8 +820,8 @@ export default function Home({
                   </a>
                   <a
                     className="imageButton_root__ZYop_"
-                    target="_blank"
-                    href="https://www.amazon.co.uk/gp/aw/d/0795711638/ref=tmm_pap_swatch_0"
+                    target="_self"
+                    href="/about"
                   >
                     <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
                       <img
@@ -918,7 +913,7 @@ export default function Home({
       <section className="mediaBanner_root__iR8_Z" data-nav-theme="dark">
         <button
           className="link_root__iDASX link_noUnder__gFrbm mediaBanner_overlayLink__Ce__l"
-          aria-label="Watch Film: Driven by faith. Focused on people. Fuelled by purpose. Higherlife Foundation exists to empower Africa’s next generation today, tomorrow, and for decades to come."
+          aria-label="Ver video institucional de FUNDEPACIFICO ONG Internacional"
           data-hover="component"
         ></button>
         <div className="mediaBanner_video__SM94J video_video__EfQ69 video_lazy__Wx4tX video_parallax__HGkT_ video_clickable__Iunlt">
@@ -943,12 +938,11 @@ export default function Home({
             >
               <path fill="#fff" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>Our Commitments</h2>
+            <h2>Nuestro compromiso</h2>
           </div>
           <div className="mediaBanner_heading__hS3gO text_l__zBmW8">
-            Driven by faith. Focused on people. Fuelled by purpose. Higherlife
-            Foundation exists to empower Africa’s next generation today,
-            tomorrow, and for decades to come.
+            Trabajamos desde los territorios para convertir alianzas, proyectos
+            y recursos en bienestar real para las comunidades.
           </div>
         </div>
       </section>
@@ -965,26 +959,23 @@ export default function Home({
               >
                 <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
               </svg>
-              <h2>What we do</h2>
+              <h2>Que hacemos</h2>
             </div>
             <div className="desktopView_item__knw15 desktopView_active___w9Ac">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
-                Education is the cornerstone of human capital development and a
-                powerful force for lasting transformation.
+                Gestionamos vivienda digna para comunidades vulnerables.
               </div>
               <div className="desktopView_body__FdDfg text_p__79svp text_dgrey__9S_lE">
                 <p>
-                  Over the past 30 years, Higherlife Foundation has supported
-                  more than 400,000 learners -from early childhood to doctoral
-                  studies. Through targeted scholarships, digital learning, and
-                  leadership development, we expand access, promote equity, and
-                  strengthen outcomes across every stage of learning.
+                  Formulamos y acompanamos proyectos habitacionales con alto
+                  componente social, participacion comunitaria y gestion de
+                  recursos.
                 </p>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="https://higherlifefoundation.org/what-we-do/education"
+                href="/what-we-do#vivienda-digna"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -998,27 +989,24 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>More information</span>
+                <span>Mas informacion</span>
               </a>
             </div>
             <div className="desktopView_item__knw15">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
-                Health restores dignity and unlocks the potential within every
-                person, family, and community.
+                Fortalecemos capacidades mediante formacion comunitaria.
               </div>
               <div className="desktopView_body__FdDfg text_p__79svp text_dgrey__9S_lE">
                 <p>
-                  From maternal care that ensures safe births and healthy
-                  families to community-led efforts that eliminate preventable
-                  diseases, Higherlife Foundation works to expand access,
-                  promote equity, and improve health outcomes for Zimbabwe’s
-                  most vulnerable communities.
+                  Realizamos talleres, diplomados, seminarios, proyectos de
+                  investigacion y acompanamiento para abrir oportunidades
+                  educativas y productivas.
                 </p>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="https://higherlifefoundation.org/what-we-do/global-health"
+                href="/what-we-do#educacion-formacion"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1032,27 +1020,23 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>More Information</span>
+                <span>Mas informacion</span>
               </a>
             </div>
             <div className="desktopView_item__knw15">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
-                Sustainable livelihoods give families the means to prosper and
-                communities the power to thrive.
+                Impulsamos emprendimientos comunitarios y agroindustriales.
               </div>
               <div className="desktopView_body__FdDfg text_p__79svp text_dgrey__9S_lE">
                 <p>
-                  At Higherlife Foundation, we invest in livelihoods that move
-                  communities from dependence to self-reliance. Our programmes
-                  strengthen food systems, build institutional resilience, and
-                  equip people with the skills and resources to thrive in
-                  changing climates.
+                  Acompanamos cooperativas y asociaciones para crear unidades
+                  productivas agropecuarias, agroindustriales y de servicios.
                 </p>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="https://higherlifefoundation.org/what-we-do/sustainable-livelihoods"
+                href="/what-we-do#emprendimiento-agroindustria"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1066,25 +1050,23 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>More Information</span>
+                <span>Mas informacion</span>
               </a>
             </div>
             <div className="desktopView_item__knw15">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
-                Preparedness protects what matters most - lives, livelihoods,
-                and hope.
+                Construimos redes de apoyo con comunidades y aliados.
               </div>
               <div className="desktopView_body__FdDfg text_p__79svp text_dgrey__9S_lE">
                 <p>
-                  At Higherlife Foundation, we build the systems,
-                  infrastructure, and local capacity needed to anticipate,
-                  withstand, and recover from crises.
+                  Articulamos organizaciones, cooperaciones sociales e
+                  instituciones para ampliar alternativas de desarrollo local.
                 </p>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="https://higherlifefoundation.org/what-we-do/disaster-relief-and-preparedness"
+                href="/what-we-do#redes-apoyo"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1098,27 +1080,24 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>More Information</span>
+                <span>Mas informacion</span>
               </a>
             </div>
             <div className="desktopView_item__knw15">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
-                Legacy preserves our past and ignites pride for the future. When
-                we protect culture, we strengthen identity and inspire
-                generations to come.
+                Promovemos obras civiles con sentido comunitario.
               </div>
               <div className="desktopView_body__FdDfg text_p__79svp text_dgrey__9S_lE">
                 <p>
-                  At Higherlife Foundation, we work to protect, modernise, and
-                  celebrate the nation’s cultural heritage so that museums,
-                  galleries, and monuments remain vibrant spaces of learning,
-                  pride, and inspiration.
+                  Gestionamos escenarios deportivos y culturales, centros
+                  educativos, vias terciarias y espacios comunitarios alineados
+                  con el objeto social.
                 </p>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="https://higherlifefoundation.org/what-we-do/legacy"
+                href="/what-we-do#obras-civiles"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1132,7 +1111,7 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>More Information</span>
+                <span>Mas informacion</span>
               </a>
             </div>
             <div className="desktopView_scrollText__Y8mmO">
@@ -1140,9 +1119,9 @@ export default function Home({
                 className="desktopView_itemTag__X2t60 text_sp__zYahz desktopView_active___w9Ac"
                 role="button"
                 tabIndex="0"
-                aria-label="Navigate to Education"
+                aria-label="Ir a Vivienda digna"
               >
-                <span className="desktopView_navText__zISiD">Education</span>
+                <span className="desktopView_navText__zISiD">Vivienda</span>
                 <div
                   className="desktopView_progressBar__KDKxE"
                   style={{ width: "0%" }}
@@ -1152,10 +1131,10 @@ export default function Home({
                 className="desktopView_itemTag__X2t60 text_sp__zYahz"
                 role="button"
                 tabIndex="0"
-                aria-label="Navigate to Global Health"
+                aria-label="Ir a Capacitacion y formacion"
               >
                 <span className="desktopView_navText__zISiD">
-                  Global Health
+                  Formacion
                 </span>
                 <div
                   className="desktopView_progressBar__KDKxE"
@@ -1166,10 +1145,10 @@ export default function Home({
                 className="desktopView_itemTag__X2t60 text_sp__zYahz"
                 role="button"
                 tabIndex="0"
-                aria-label="Navigate to Sustainable Livelihoods"
+                aria-label="Ir a Emprendimiento y agroindustria"
               >
                 <span className="desktopView_navText__zISiD">
-                  Sustainable Livelihoods
+                  Emprendimiento
                 </span>
                 <div
                   className="desktopView_progressBar__KDKxE"
@@ -1180,10 +1159,10 @@ export default function Home({
                 className="desktopView_itemTag__X2t60 text_sp__zYahz"
                 role="button"
                 tabIndex="0"
-                aria-label="Navigate to Disaster Relief &amp; Preparedness"
+                aria-label="Ir a Redes de apoyo"
               >
                 <span className="desktopView_navText__zISiD">
-                  Disaster Relief &amp; Preparedness
+                  Redes de apoyo
                 </span>
                 <div
                   className="desktopView_progressBar__KDKxE"
@@ -1194,9 +1173,9 @@ export default function Home({
                 className="desktopView_itemTag__X2t60 text_sp__zYahz"
                 role="button"
                 tabIndex="0"
-                aria-label="Navigate to Legacy"
+                aria-label="Ir a Obras civiles"
               >
-                <span className="desktopView_navText__zISiD">Legacy</span>
+                <span className="desktopView_navText__zISiD">Obras civiles</span>
                 <div
                   className="desktopView_progressBar__KDKxE"
                   style={{ width: "0%" }}
@@ -1209,7 +1188,7 @@ export default function Home({
             >
               <picture className="desktopView_image__D4LYA image_root__mq3ej image_parallax___5ITN image_loaded__zdWuW">
                 <img
-                  alt="Education - Image"
+                  alt="Vivienda digna"
                   loading="lazy"
                   width="1404"
                   height="1976"
@@ -1228,7 +1207,7 @@ export default function Home({
             <div className="desktopView_images__mY4tC" style={{ zIndex: "9" }}>
               <picture className="desktopView_image__D4LYA image_root__mq3ej image_parallax___5ITN image_loaded__zdWuW">
                 <img
-                  alt="Global Health - Image"
+                  alt="Capacitacion y formacion"
                   loading="lazy"
                   width="1404"
                   height="1976"
@@ -1247,7 +1226,7 @@ export default function Home({
             <div className="desktopView_images__mY4tC" style={{ zIndex: "2" }}>
               <picture className="desktopView_image__D4LYA image_root__mq3ej image_parallax___5ITN image_loaded__zdWuW">
                 <img
-                  alt="Sustainable Livelihoods - Image"
+                  alt="Emprendimiento y agroindustria"
                   loading="lazy"
                   width="1404"
                   height="1976"
@@ -1266,7 +1245,7 @@ export default function Home({
             <div className="desktopView_images__mY4tC" style={{ zIndex: "3" }}>
               <picture className="desktopView_image__D4LYA image_root__mq3ej image_parallax___5ITN image_loaded__zdWuW">
                 <img
-                  alt="Disaster Relief - Image"
+                  alt="Redes de apoyo"
                   loading="lazy"
                   width="1404"
                   height="1976"
@@ -1285,7 +1264,7 @@ export default function Home({
             <div className="desktopView_images__mY4tC" style={{ zIndex: "4" }}>
               <picture className="desktopView_image__D4LYA image_root__mq3ej image_parallax___5ITN image_loaded__zdWuW">
                 <img
-                  alt="Legacy - Image"
+                  alt="Obras civiles"
                   loading="lazy"
                   width="1404"
                   height="1976"
@@ -1307,7 +1286,7 @@ export default function Home({
       <section className="mobileView_root__mHRYK" data-story-block="true">
         <div className="mobileView_tag__dsJYr text_tag__kpI4A">
           <SquareIcon />
-          <h2>What we do</h2>
+          <h2>Que hacemos</h2>
         </div>
         {whatWeDoItems.map((item, index) => (
           <div
@@ -1387,7 +1366,7 @@ export default function Home({
                 sizes="100vw"
               />
               <img
-                alt="Education Statistics Banner - Image"
+                alt="Indicadores institucionales"
                 loading="lazy"
                 width="1560"
                 height="2988"
@@ -1422,7 +1401,7 @@ export default function Home({
                 sizes="100vw"
               />
               <img
-                alt="Global Health Statistics Banner - Image"
+                alt="Reconocimiento legal"
                 loading="lazy"
                 width="1560"
                 height="2988"
@@ -1457,7 +1436,7 @@ export default function Home({
                 sizes="100vw"
               />
               <img
-                alt="Statistics Banner Sustainable Livelihoods - Image"
+                alt="Programas comunitarios"
                 loading="lazy"
                 width="1560"
                 height="2988"
@@ -1495,7 +1474,7 @@ export default function Home({
                 sizes="100vw"
               />
               <img
-                alt="Statistics Banner Sustainable Livelihoods - Image"
+                alt="Territorio y comunidad"
                 loading="lazy"
                 width="1560"
                 height="2988"
@@ -1531,7 +1510,7 @@ export default function Home({
                 >
                   <path fill="#fff" d="M0 0h8v8H0z"></path>
                 </svg>
-                <h2>Our Impact</h2>
+                <h2>Impacto</h2>
               </div>
               <div
                 className="statsBanner_item__zD5NK statsBanner_active__5eZ9u"
@@ -1539,7 +1518,7 @@ export default function Home({
               >
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    400,000
+                    2010
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1556,39 +1535,38 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Scholarships awarded to vulnerable and academically gifted
-                    children.
+                    Inicio de la labor social en Buenaventura.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    65,000
+                    2018
                   </div>
                   <div className="text_sp__zYahz">
-                    Teachers trained in digital skills, literacy and numeracy.
+                    Resolucion 1319 del Ministerio del Interior.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    2 Million
+                    2023
                   </div>
                   <div className="text_sp__zYahz">
-                    Learners reached with high-quality e-learning materials.
+                    Registro ESAL DIAN para la fundacion.
                   </div>
                 </div>
               </div>
               <div className="statsBanner_item__zD5NK" data-item="1">
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    40 Million
+                    5
                   </div>
                   <div className="text_sp__zYahz">
-                    NTD treatments delivered to at-risk communities.
+                    Pilares de accion comunitaria.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    6,000
+                    2030
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1605,13 +1583,12 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Healthcare professionals trained in referral hospital
-                    maternity wards.
+                    Vision de reconocimiento nacional e internacional.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    2 Million
+                    1
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1628,22 +1605,22 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    People vaccinated against Cholera in hotspot areas.
+                    Sede principal en Buenaventura, Valle del Cauca.
                   </div>
                 </div>
               </div>
               <div className="statsBanner_item__zD5NK" data-item="2">
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    2.4 Million
+                    6
                   </div>
                   <div className="text_sp__zYahz">
-                    People impacted through livelihoods interventions.
+                    Valores institucionales que guian el trabajo.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    413,000
+                    2026
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1660,12 +1637,12 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Smallholder farmers trained in climate-smart agriculture.
+                    Portafolio de servicios actualizado.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    4,000
+                    316
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1682,14 +1659,14 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Vulnerable children made food secure.
+                    228 3235 como canal telefonico de contacto.
                   </div>
                 </div>
               </div>
               <div className="statsBanner_item__zD5NK" data-item="3">
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    16 Million
+                    1319
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1706,14 +1683,12 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Zimbabweans Protected through 2 Emergency Operations Centres
-                    serve as command hubs for enhanced coordination and rapid
-                    response.
+                    Resolucion de reconocimiento institucional.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    2 Million
+                    10A-08
                     <svg
                       className="statsBanner_plus__KPp65"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1730,8 +1705,7 @@ export default function Home({
                     </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    People trained in community-based disaster relief and
-                    preparedness.
+                    Direccion de la sede en Buenaventura.
                   </div>
                 </div>
               </div>
@@ -1752,7 +1726,7 @@ export default function Home({
                     d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                   ></path>
                 </svg>
-                <span>View All Stats</span>
+                <span>Ver indicadores</span>
               </a>
             </div>
           </div>
@@ -1770,27 +1744,26 @@ export default function Home({
             >
               <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>Join our mission</h2>
+            <h2>Sumese a la mision</h2>
           </div>
           <div className="callToAction_heading__qdhzD text_xxl__KYbm5">
             <h3 style={{ lineHeight: "1" }}>
-              Collaborate <br />
-              <span className="text_grey__nqMgS">With Us</span>
+              Construyamos <br />
+              <span className="text_grey__nqMgS">Juntos</span>
             </h3>
           </div>
           <div className="callToAction_copy__YgOCK">
             <div className="callToAction_subHeading__SBo6g text_sh__zU3LH">
               <p>
-                Over the years, we've helped unlock opportunities for thousands.
-                From expanding access to education, to improving livelihoods
-                across communities.
+                Las alianzas permiten convertir ideas y recursos en proyectos
+                con impacto social, cultural, ambiental y economico.
               </p>
             </div>
             <div className="text_p__79svp text_dgrey__9S_lE">
               <p>
-                This impact is only possible through shared effort and long-term
-                collaboration. As we continue to grow, your involvement can help
-                extend this reach and deepen the difference we make together.
+                Si representa una comunidad, institucion, empresa u
+                organizacion social, podemos conversar sobre rutas de trabajo
+                conjunto.
               </p>
             </div>
           </div>
@@ -1811,12 +1784,12 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>Get Involved</span>
+              <span>Aliarse</span>
             </button>
             <a
               className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7 callToAction_button__JtFqK"
               target="_self"
-              href="https://higherlifefoundation.org/about"
+              href="/about"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1830,7 +1803,7 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>Our Mission</span>
+              <span>Nuestra mision</span>
             </a>
           </div>
         </div>

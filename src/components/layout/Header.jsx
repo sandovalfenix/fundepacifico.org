@@ -282,7 +282,7 @@ export default function Header({ onOpenGetInvolved }) {
         <div className="nav_menu___JiiA text_tag__kpI4A">
           <div className="nav_dropdown__WQk53">
             <button className="nav_label__HMaLQ">
-              What we do
+              Que hacemos
               <svg
                 className="nav_arrow__98gfz"
                 xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ export default function Header({ onOpenGetInvolved }) {
           </div>
           <div className="nav_dropdown__WQk53">
             <button className="nav_label__HMaLQ">
-              About us
+              Quienes somos
               <svg
                 className="nav_arrow__98gfz"
                 xmlns="http://www.w3.org/2000/svg"
@@ -312,7 +312,7 @@ export default function Header({ onOpenGetInvolved }) {
           </div>
           <div className="nav_dropdown__WQk53">
             <button className="nav_label__HMaLQ">
-              Insight &amp; Resources
+              Recursos
               <svg
                 className="nav_arrow__98gfz"
                 xmlns="http://www.w3.org/2000/svg"
@@ -327,15 +327,15 @@ export default function Header({ onOpenGetInvolved }) {
           </div>
           <a
             className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID"
-            href="https://higherlifefoundation.org/our-impact"
+            href="/impact"
           >
-            Impact
+            Impacto
           </a>
           <a
             className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID"
-            href="https://higherlifefoundation.org/contact"
+            href="/contact"
           >
-            Contact
+            Contacto
           </a>
         </div>
         <div className="nav_buttons__lO0N3">
@@ -355,7 +355,7 @@ export default function Header({ onOpenGetInvolved }) {
                 d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
               ></path>
             </svg>
-            <span>Get Involved</span>
+            <span>Aliarse</span>
           </button>
           {isMobile && (
             <button
@@ -409,41 +409,41 @@ export default function Header({ onOpenGetInvolved }) {
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/what-we-do/education"
+                    href="/what-we-do#vivienda-digna"
                   >
-                    Education
+                    Vivienda digna
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/what-we-do/global-health"
+                    href="/what-we-do#educacion-formacion"
                   >
-                    Global Health
+                    Capacitacion y formacion
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/what-we-do/sustainable-livelihoods"
+                    href="/what-we-do#emprendimiento-agroindustria"
                   >
-                    Sustainable Livelihoods
+                    Emprendimiento y agroindustria
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/what-we-do/disaster-relief-and-preparedness"
+                    href="/what-we-do#redes-apoyo"
                   >
-                    Disaster Relief &amp; Preparedness
+                    Redes de apoyo
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/what-we-do/legacy"
+                    href="/what-we-do#obras-civiles"
                   >
-                    Legacy
+                    Obras civiles
                   </a>
                 </li>
               </ul>
@@ -469,25 +469,25 @@ export default function Header({ onOpenGetInvolved }) {
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/about"
+                    href="/about"
                   >
-                    Our Story
+                    Historia
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/about#leadership"
+                    href="/about#leadership"
                   >
-                    Leadership
+                    Liderazgo
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/featured-grantees"
+                    href="/about"
                   >
-                    Our Grantees
+                    Valores
                   </a>
                 </li>
               </ul>
@@ -513,17 +513,17 @@ export default function Header({ onOpenGetInvolved }) {
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/resources"
+                    href="/resources"
                   >
-                    Resources
+                    Portafolio
                   </a>
                 </li>
                 <li className="nav_dropdownItem__EnWi2">
                   <a
                     className="link_root__iDASX link_noUnder__gFrbm nav_dropdownLink__sG9QM text_navD__PxmrC"
-                    href="https://higherlifefoundation.org/blog"
+                    href="/resources"
                   >
-                    Insights
+                    Documentos
                   </a>
                 </li>
               </ul>
@@ -541,14 +541,14 @@ export default function Header({ onOpenGetInvolved }) {
               transform: "translate(0px, 20px)",
             }}
           >
-            Empowering Africa’s future. One student, one community, one vision
-            at a time.
+            Derechos, oportunidades y desarrollo sostenible para el Pacifico
+            colombiano.
           </p>
           <div className="nav_platforms__zr2Be">
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.instagram.com/higherlifefndtn/?hl=en"
+              href="#"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -572,7 +572,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.facebook.com/HigherlifeFDN/?locale2=ms_MY&amp;_rdr"
+              href="#"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -596,7 +596,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.linkedin.com/company/higher-life/?originalSubdomain=zw"
+              href="#"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -620,7 +620,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://x.com/higherlifefdn?lang=en"
+              href="#"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -656,7 +656,7 @@ export default function Header({ onOpenGetInvolved }) {
       >
         <div className="nav_accordionWrap__lR3MH">
           <button className="button_root__fMfbx text_l__zBmW8 nav_dropdownButton__JK1HY">
-            What we do
+            Que hacemos
             <svg
               className="nav_arrow__98gfz"
               xmlns="http://www.w3.org/2000/svg"
@@ -675,40 +675,40 @@ export default function Header({ onOpenGetInvolved }) {
             <div className="nav_accordionLinks__1joKn">
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/what-we-do/education"
+                href="/what-we-do#vivienda-digna"
               >
-                Education
+                Vivienda digna
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/what-we-do/global-health"
+                href="/what-we-do#educacion-formacion"
               >
-                Global Health
+                Capacitacion y formacion
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/what-we-do/sustainable-livelihoods"
+                href="/what-we-do#emprendimiento-agroindustria"
               >
-                Sustainable Livelihoods
+                Emprendimiento y agroindustria
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/what-we-do/disaster-relief-and-preparedness"
+                href="/what-we-do#redes-apoyo"
               >
-                Disaster Relief &amp; Preparedness
+                Redes de apoyo
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/what-we-do/legacy"
+                href="/what-we-do#obras-civiles"
               >
-                Legacy
+                Obras civiles
               </a>
             </div>
           </div>
         </div>
         <div className="nav_accordionWrap__lR3MH">
           <button className="button_root__fMfbx text_l__zBmW8 nav_dropdownButton__JK1HY">
-            About us
+            Quienes somos
             <svg
               className="nav_arrow__98gfz"
               xmlns="http://www.w3.org/2000/svg"
@@ -727,28 +727,28 @@ export default function Header({ onOpenGetInvolved }) {
             <div className="nav_accordionLinks__1joKn">
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/about"
+                href="/about"
               >
-                Our Story
+                Historia
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/about#leadership"
+                href="/about#leadership"
               >
-                Leadership
+                Liderazgo
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/featured-grantees"
+                href="/about"
               >
-                Our Grantees
+                Valores
               </a>
             </div>
           </div>
         </div>
         <div className="nav_accordionWrap__lR3MH">
           <button className="button_root__fMfbx text_l__zBmW8 nav_dropdownButton__JK1HY">
-            Insight &amp; Resources
+            Recursos
             <svg
               className="nav_arrow__98gfz"
               xmlns="http://www.w3.org/2000/svg"
@@ -767,41 +767,41 @@ export default function Header({ onOpenGetInvolved }) {
             <div className="nav_accordionLinks__1joKn">
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/resources"
+                href="/resources"
               >
-                Resources
+                Portafolio
               </a>
               <a
                 className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_navD__PxmrC"
-                href="https://higherlifefoundation.org/blog"
+                href="/resources"
               >
-                Insights
+                Documentos
               </a>
             </div>
           </div>
         </div>
         <a
           className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_l__zBmW8"
-          href="https://higherlifefoundation.org/our-impact"
+          href="/impact"
         >
-          Impact
+          Impacto
         </a>
         <a
           className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_l__zBmW8"
-          href="https://higherlifefoundation.org/contact"
+          href="/contact"
         >
-          Contact
+          Contacto
         </a>
         <div className="nav_bottom__47S9d">
           <p className="nav_text__uiMq9 text_sp__zYahz">
-            Empowering Africa’s future. One student, one community, one vision
-            at a time.
+            Derechos, oportunidades y desarrollo sostenible para el Pacifico
+            colombiano.
           </p>
           <div className="nav_platforms__zr2Be">
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.instagram.com/higherlifefndtn/?hl=en"
+              href="#"
             >
               <picture className="nav_icon__SGI6D image_root__mq3ej image_noLoadAnimation__5ZG16 image_loaded__zdWuW">
                 <img
@@ -818,7 +818,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.facebook.com/HigherlifeFDN/?locale2=ms_MY&amp;_rdr"
+              href="#"
             >
               <picture className="nav_icon__SGI6D image_root__mq3ej image_noLoadAnimation__5ZG16 image_loaded__zdWuW">
                 <img
@@ -835,7 +835,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://www.linkedin.com/company/higher-life/?originalSubdomain=zw"
+              href="#"
             >
               <picture className="nav_icon__SGI6D image_root__mq3ej image_noLoadAnimation__5ZG16 image_loaded__zdWuW">
                 <img
@@ -852,7 +852,7 @@ export default function Header({ onOpenGetInvolved }) {
             <a
               className="link_root__iDASX link_noUnder__gFrbm"
               target="_blank"
-              href="https://x.com/higherlifefdn?lang=en"
+              href="#"
             >
               <picture className="nav_icon__SGI6D image_root__mq3ej image_noLoadAnimation__5ZG16 image_loaded__zdWuW">
                 <img

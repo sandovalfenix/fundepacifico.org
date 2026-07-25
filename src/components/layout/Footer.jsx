@@ -2,66 +2,66 @@ import React, { useState } from "react";
 
 const menuItems = [
   {
-    heading: "What we do",
+    heading: "Que hacemos",
     links: [
-      ["Education", "https://higherlifefoundation.org/what-we-do/education"],
-      ["Global Health", "https://higherlifefoundation.org/what-we-do/global-health"],
-      ["Disaster Relief & Preparedness", "https://higherlifefoundation.org/what-we-do/disaster-relief-and-preparedness"],
-      ["Sustainable Livelihoods", "https://higherlifefoundation.org/what-we-do/sustainable-livelihoods"],
+      ["Vivienda digna", "/what-we-do#vivienda-digna"],
+      ["Capacitacion y formacion", "/what-we-do#educacion-formacion"],
+      ["Emprendimiento y agroindustria", "/what-we-do#emprendimiento-agroindustria"],
+      ["Redes de apoyo", "/what-we-do#redes-apoyo"],
     ],
   },
   {
-    heading: "About us",
+    heading: "Quienes somos",
     links: [
-      ["Our Story", "https://higherlifefoundation.org/about"],
-      ["Meet the Team", "https://higherlifefoundation.org/about#leadership"],
-      ["Our Partners", "https://higherlifefoundation.org/featured-grantees#our-grantees"],
-      ["Our Impact", "https://higherlifefoundation.org/our-impact"],
+      ["Historia", "/about"],
+      ["Liderazgo", "/about#leadership"],
+      ["Valores", "/about"],
+      ["Impacto", "/impact"],
     ],
   },
   {
-    heading: "Insight & Resources",
+    heading: "Recursos",
     links: [
-      ["Career", "https://higherlifefoundation.org/contact#careers"],
-      ["Articles", "https://higherlifefoundation.org/blog"],
-      ["Resources", "https://higherlifefoundation.org/resources"],
-      ["Contact", "https://higherlifefoundation.org/contact"],
+      ["Portafolio 2026", "/resources"],
+      ["Objeto social", "/about"],
+      ["Servicios", "/what-we-do"],
+      ["Contacto", "/contact"],
     ],
   },
   {
     heading: "Legal",
     links: [
-      ["Privacy Policy", "https://higherlifefoundation.org/privacy-policy"],
-      ["Terms & Conditions", "https://higherlifefoundation.org/terms-and-conditions"],
-      ["Cookie Settings", "https://higherlifefoundation.org/cookie-policy"],
+      ["Política de Privacidad", "#"],
+      ["Términos y Condiciones", "#"],
+      ["Configuración de Cookies", "#"],
     ],
   },
 ];
 
 const offices = [
   {
-    title: "Head Office (Zimbabwe)",
+    title: "Sede principal",
     details: [
-      ["58 Alpes Road, Vainona, Harare, Zimbabwe", "https://www.google.com/maps/place/58+Alpes+Rd,+Harare,+Zimbabwe/"],
-      ["info@higherlifefoundation.com", "mailto:info@higherlifefoundation.com"],
-      ["(+263) 772 222 922", "tel:+263772222922"],
+      ["Calle 1 No. 10A-08, Buenaventura, Valle, Colombia", "#"],
+      ["onginternacional@fundepacifico.org", "mailto:onginternacional@fundepacifico.org"],
+      ["(+57) 316 228 3235", "tel:+573162283235"],
     ],
   },
   {
-    title: "Lesotho Office",
+    title: "Representante legal",
     details: [
-      ["Main South One Road, Mazenod, Maseru, Lesotho", "https://www.google.com/maps/place/Main+South+1+Rd,+Lesotho/"],
-      ["info@higherlifefoundation.com", "mailto:info@higherlifefoundation.com"],
-      ["(+266) 22 350 306", "tel:+26622350306"],
+      ["Orlando Arrechea Orobio", "/about"],
+      ["fundepacificoong@gmail.com", "mailto:fundepacificoong@gmail.com"],
+      ["www.fundepacifico.org", "https://www.fundepacifico.org"],
     ],
   },
 ];
 
 const socials = [
-  ["Instagram", "https://www.instagram.com/higherlifefndtn/?hl=en", "/assets/ae2b6205894d4c5ac4115e8a17fdf42ccce49deb-20x20.svg"],
-  ["Facebook", "https://www.facebook.com/HigherlifeFDN/", "/assets/bf88b28af146b91f385eb503c6a183cd44ba137b-20x20.svg"],
-  ["LinkedIn", "https://www.linkedin.com/company/higher-life/", "/assets/0bfd88b63892f8bbfe5dbe9651c2149f73ed318d-20x20.svg"],
-  ["Twitter", "https://x.com/higherlifefdn", "/assets/eff35b9a94105b50217497c0a9ac7153d15154d3-20x20.svg"],
+  ["Instagram", "#", "/assets/ae2b6205894d4c5ac4115e8a17fdf42ccce49deb-20x20.svg"],
+  ["Facebook", "#", "/assets/bf88b28af146b91f385eb503c6a183cd44ba137b-20x20.svg"],
+  ["LinkedIn", "#", "/assets/0bfd88b63892f8bbfe5dbe9651c2149f73ed318d-20x20.svg"],
+  ["Twitter", "#", "/assets/eff35b9a94105b50217497c0a9ac7153d15154d3-20x20.svg"],
 ];
 
 function ArrowIcon({ open }) {
@@ -147,13 +147,13 @@ export default function Footer() {
         <div className="footer_newsletter__EEPoC">
           <div className="footer_title__QcupS text_xs__SekJ2">Newsletter</div>
           <div className="footer_body__RXJ8f text_p__79svp">
-            Join our mailing list to stay up to date with what's happening at Higherlife Foundation
+            Reciba novedades sobre programas, alianzas y proyectos de FUNDEPACIFICO.
           </div>
           <button className="button_root__fMfbx button_standard__YccnH button_colorWhite__uKfX5 text_cta__jYwZ7">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
               <path stroke="#1A1A1A" d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"></path>
             </svg>
-            <span>Join Our Community</span>
+            <span>Unirse</span>
           </button>
         </div>
 
@@ -177,7 +177,7 @@ export default function Footer() {
 
       <div className="footer_bottom__FFkQv">
         <div className="footer_copyright__52pcN text_p__79svp">
-          © {new Date().getFullYear()} Higherlife Foundation. All Rights Reserved.
+          © {new Date().getFullYear()} FUNDEPACIFICO ONG Internacional. Todos los derechos reservados.
         </div>
         <a className="link_root__iDASX footer_link__pjK7O text_p__79svp" href="https://dashdigital.studio">
           Website by DashDigital Studio

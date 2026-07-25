@@ -10,7 +10,7 @@ export default function OurImpact() {
     window.scrollTo(0, 0);
   }, []);
 
-  const categories = ['All', 'Education', 'Global Health', 'Sustainable Livelihoods', 'Disaster Relief'];
+  const categories = ['All', 'Historia', 'Legal', 'Vision', 'Programas', 'Territorio'];
 
   const filteredStats = selectedCategory === 'All'
     ? siteData.stats
@@ -21,19 +21,19 @@ export default function OurImpact() {
       
       {/* Header */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
-        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Empirical Evidence</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Impact Dashboard</h1>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Impacto institucional</span>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Indicadores clave</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Tracking long-term outcomes across scholarship awards, maternal healthcare trainings, climate agriculture adoption, and disaster emergency response.
+          Una lectura simple de la trayectoria, reconocimiento legal, lineas de accion y proyeccion de FUNDEPACIFICO.
         </p>
 
         <div className="pt-2">
           <button
-            onClick={() => alert("Downloading Higherlife Foundation 2026 Comprehensive Impact Report...")}
+            onClick={() => alert("Consultando Portafolio de Servicios FUNDEPACIFICO 2026...")}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand-gold hover:bg-[#f5c253] text-slate-950 font-bold text-xs transition-colors shadow-lg"
           >
             <Download className="w-4 h-4" />
-            <span>Download 2026 Annual Impact Report (PDF)</span>
+            <span>Portafolio de Servicios 2026</span>
           </button>
         </div>
       </section>

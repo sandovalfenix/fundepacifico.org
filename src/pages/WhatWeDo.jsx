@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2, GraduationCap, HeartPulse, Sprout, ShieldAlert, Sparkles } from 'lucide-react';
+import { ArrowRight, Building2, CheckCircle2, GraduationCap, HeartPulse, Sprout, ShieldAlert } from 'lucide-react';
 import { siteData } from '../data/siteData';
 
 export default function WhatWeDo({ onOpenGetInvolved }) {
@@ -18,11 +18,11 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
   }, [hash]);
 
   const pillarIcons = {
-    education: GraduationCap,
-    'global-health': HeartPulse,
-    'sustainable-livelihoods': Sprout,
-    'disaster-relief': ShieldAlert,
-    legacy: Sparkles
+    'vivienda-digna': Building2,
+    'educacion-formacion': GraduationCap,
+    'emprendimiento-agroindustria': Sprout,
+    'redes-apoyo': HeartPulse,
+    'obras-civiles': ShieldAlert
   };
 
   return (
@@ -30,10 +30,10 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
       
       {/* Header */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
-        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Our Strategic Pillars</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">What We Do</h1>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Pilares estrategicos</span>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Que hacemos</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Higherlife Foundation addresses systemic challenges across Africa through five core interconnected pillars—driving sustainable human capital development.
+          FUNDEPACIFICO ONG Internacional formula, gestiona y ejecuta programas sociales, comunitarios y ambientales para mejorar la calidad de vida de comunidades vulnerables en Buenaventura, el Valle del Cauca y otros territorios de Colombia.
         </p>
       </section>
 
@@ -55,7 +55,7 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
                     <Icon className="w-6 h-6" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Pillar 0{idx + 1}</span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Pilar 0{idx + 1}</span>
                     <h2 className="text-3xl font-extrabold font-display text-white">{pillar.title}</h2>
                   </div>
                 </div>
@@ -64,7 +64,7 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
                 <p className="text-sm text-slate-300 leading-relaxed">{pillar.description}</p>
 
                 <div className="space-y-3 pt-2">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Core Impact Metrics</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Lineas de accion</h4>
                   {pillar.highlights.map((h, i) => (
                     <div key={i} className="flex items-start gap-3 text-xs text-slate-200">
                       <CheckCircle2 className="w-4 h-4 text-brand-lime shrink-0 mt-0.5" />
@@ -78,7 +78,7 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
                     onClick={onOpenGetInvolved}
                     className="px-6 py-3 rounded-full bg-brand-lime hover:bg-[#b0f065] text-slate-950 font-bold text-xs transition-colors flex items-center gap-2 shadow-glow-lime"
                   >
-                    <span>Partner in {pillar.title}</span>
+                    <span>Aliarse en {pillar.title}</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

@@ -10,11 +10,11 @@ export default function Resources() {
   }, []);
 
   const articles = [
-    { title: "2026 Higherlife Foundation Annual Impact Report", type: "Report", date: "July 2026", category: "Annual Reports", desc: "Comprehensive evaluation of our 5 pillars across 6 African nations." },
-    { title: "Climate-Smart Agriculture: The Pfumvudza Model", type: "Policy Brief", date: "June 2026", category: "Livelihoods", desc: "How micro-plot conservation farming protects smallholders against drought." },
-    { title: "Digital Learning Expansion in Rural Secondary Schools", type: "Case Study", date: "May 2026", category: "Education", desc: "Empirical analysis of e-learning hub rollouts across Zimbabwe and Lesotho." },
-    { title: "Maternal Health Capacity Building in Referral Hospitals", type: "Health Brief", date: "April 2026", category: "Global Health", desc: "Training 6,000 maternity nurses to reduce infant mortality." },
-    { title: "Emergency Operations Centres: Rapid Disaster Response", type: "Whitepaper", date: "March 2026", category: "Disaster Preparedness", desc: "Building national command hubs for disease outbreaks and climate shocks." }
+    { title: "Portafolio de Servicios FUNDEPACIFICO 2026", type: "Portafolio", date: "2026", category: "Institucional", desc: "Resumen de objeto social, pilares, mision, vision, valores y datos de contacto." },
+    { title: "Objeto social de la fundacion", type: "Documento", date: "2026", category: "Institucional", desc: "Promocion de derechos humanos, territoriales, sociales, economicos, culturales, ambientales y politicos." },
+    { title: "Pilares de intervencion comunitaria", type: "Guia", date: "2026", category: "Programas", desc: "Vivienda digna, formacion, emprendimiento, redes de apoyo y obras civiles comunitarias." },
+    { title: "Mision, vision y valores", type: "Resumen", date: "2026", category: "Direccionamiento", desc: "Principios de solidaridad, compromiso, excelencia, participacion, transparencia y unidad." },
+    { title: "Informacion legal y contacto", type: "Ficha", date: "2026", category: "Contacto", desc: "Resoluciones institucionales, sede en Buenaventura y canales oficiales de comunicacion." }
   ];
 
   const filteredArticles = articles.filter(a => {
@@ -28,10 +28,10 @@ export default function Resources() {
       
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
-        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Knowledge Repository</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Insight & Resources</h1>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Repositorio</span>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Recursos</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Access our latest policy briefs, empirical research studies, annual reports, and field insights on human capital development.
+          Consulte informacion institucional simplificada a partir del portafolio de servicios 2026.
         </p>
 
         {/* Search */}
@@ -39,7 +39,7 @@ export default function Resources() {
           <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
           <input
             type="text"
-            placeholder="Search reports, whitepapers, topics..."
+            placeholder="Buscar documentos, temas o programas..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
@@ -50,7 +50,7 @@ export default function Resources() {
       {/* Filter tabs */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-center gap-2 flex-wrap pb-6 border-b border-slate-800">
-          {['All', 'Annual Reports', 'Education', 'Global Health', 'Livelihoods', 'Disaster Preparedness'].map((cat) => (
+          {['All', 'Institucional', 'Programas', 'Direccionamiento', 'Contacto'].map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveFilter(cat)}
@@ -87,7 +87,7 @@ export default function Resources() {
                   className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition-colors"
                 >
                   <Download className="w-3.5 h-3.5 text-brand-lime" />
-                  <span>Download Document</span>
+                  <span>Ver documento</span>
                 </button>
               </div>
             </div>

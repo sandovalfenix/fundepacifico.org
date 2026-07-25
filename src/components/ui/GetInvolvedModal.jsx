@@ -49,8 +49,8 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                   <Heart className="w-6 h-6 fill-brand-lime text-brand-lime" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white font-display">Get Involved with Higherlife</h3>
-                  <p className="text-xs text-slate-400">Join our movement to empower Africa’s next generation.</p>
+                  <h3 className="text-xl font-bold text-white font-display">Aliarse con FUNDEPACIFICO</h3>
+                  <p className="text-xs text-slate-400">Construyamos proyectos sociales y comunitarios desde el territorio.</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                     activeTab === 'partner' ? 'bg-brand-lime text-slate-900 shadow' : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <Building2 className="w-3.5 h-3.5" /> Partner
+                  <Building2 className="w-3.5 h-3.5" /> Aliado
                 </button>
                 <button
                   onClick={() => setActiveTab('volunteer')}
@@ -70,7 +70,7 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                     activeTab === 'volunteer' ? 'bg-brand-lime text-slate-900 shadow' : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <Users className="w-3.5 h-3.5" /> Volunteer
+                  <Users className="w-3.5 h-3.5" /> Voluntario
                 </button>
                 <button
                   onClick={() => setActiveTab('scholar')}
@@ -78,7 +78,7 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                     activeTab === 'scholar' ? 'bg-brand-lime text-slate-900 shadow' : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  <GraduationCap className="w-3.5 h-3.5" /> Scholars
+                  <GraduationCap className="w-3.5 h-3.5" /> Comunidad
                 </button>
               </div>
 
@@ -86,11 +86,11 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
+                    <label className="block text-xs font-medium text-slate-300 mb-1">Nombre completo</label>
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Sarah Ndlovu"
+                      placeholder="Ej. Ana Renteria"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
@@ -98,11 +98,11 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
+                    <label className="block text-xs font-medium text-slate-300 mb-1">Correo electronico</label>
                     <input
                       type="email"
                       required
-                      placeholder="e.g. sarah@example.org"
+                      placeholder="Ej. correo@example.org"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
@@ -112,10 +112,10 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1">Organization / Institution</label>
+                    <label className="block text-xs font-medium text-slate-300 mb-1">Organizacion / institucion</label>
                     <input
                       type="text"
-                      placeholder="e.g. Global Education Initiative"
+                      placeholder="Ej. Asociacion comunitaria"
                       value={formData.organization}
                       onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
@@ -123,26 +123,26 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-slate-300 mb-1">Pillar of Interest</label>
+                    <label className="block text-xs font-medium text-slate-300 mb-1">Area de interes</label>
                     <select
                       value={formData.interest}
                       onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
                     >
-                      <option value="education">Education & Scholarships</option>
-                      <option value="health">Global Health</option>
-                      <option value="livelihoods">Sustainable Livelihoods</option>
-                      <option value="disaster">Disaster Preparedness</option>
+                      <option value="vivienda">Vivienda digna</option>
+                      <option value="formacion">Capacitacion y formacion</option>
+                      <option value="emprendimiento">Emprendimiento y agroindustria</option>
+                      <option value="obras">Obras civiles comunitarias</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-300 mb-1">How would you like to collaborate?</label>
+                  <label className="block text-xs font-medium text-slate-300 mb-1">Como desea colaborar?</label>
                   <textarea
                     rows={3}
                     required
-                    placeholder="Tell us about your organization or how you'd like to get involved..."
+                    placeholder="Cuentenos sobre su organizacion, comunidad o propuesta..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-lime"
@@ -153,7 +153,7 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                   type="submit"
                   className="w-full py-3 rounded-xl bg-brand-lime hover:bg-[#b0f065] text-slate-900 font-bold text-sm transition-colors flex items-center justify-center gap-2 shadow-glow-lime"
                 >
-                  <span>Submit Inquiry</span>
+                  <span>Enviar solicitud</span>
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </form>
@@ -163,15 +163,15 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
               <div className="inline-flex p-4 bg-brand-lime/20 border border-brand-lime rounded-full text-brand-lime mb-2">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
-              <h3 className="text-2xl font-bold text-white font-display">Inquiry Received!</h3>
+              <h3 className="text-2xl font-bold text-white font-display">Solicitud recibida</h3>
               <p className="text-sm text-slate-300 max-w-md mx-auto">
-                Thank you, <span className="text-white font-semibold">{formData.name}</span>. A representative from Higherlife Foundation / FundaPacífico will get in touch with you shortly.
+                Gracias, <span className="text-white font-semibold">{formData.name}</span>. Un representante de FUNDEPACIFICO le contactara pronto.
               </p>
               <button
                 onClick={handleReset}
                 className="mt-4 px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm transition-colors"
               >
-                Close Window
+                Cerrar
               </button>
             </div>
           )}

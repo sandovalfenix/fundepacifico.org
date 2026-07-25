@@ -17,11 +17,11 @@ export default function AboutUs() {
     "https://www.linkedin.com/in/orlando-arrechea-orobio-4a4a911b5/";
 
   const timeline = [
-    { year: '1996', title: 'Foundation Established', desc: 'Orlando Arrechea Orobio founded the foundation in response to community needs, focusing on lasting local impact.' },
-    { year: '2006', title: 'Joshua Nkomo Scholarship', desc: 'Launch of the premier merit scholarship program nurturing Africa’s bright young leaders.' },
-    { year: '2014', title: 'Ebola Outbreak Response', desc: 'Co-founded the African Business Coalition Health (ABCHealth) to mobilize health interventions.' },
-    { year: '2020', title: 'COVID-19 & Digital Education', desc: 'Deploys digital e-learning platforms reaching 2 Million+ students across vulnerable regions.' },
-    { year: '2026', title: 'Decades of Transformation', desc: 'Celebrates 400,000+ scholarships, 40M+ health treatments, and 413,000+ climate farmers.' }
+    { year: '2010', title: 'Inicio de labor social', desc: 'FUNDEPACIFICO inicia su trabajo comunitario en Buenaventura, ciudad puerto, biodiversa, industrial y ecoturistica.' },
+    { year: '2018', title: 'Reconocimiento institucional', desc: 'Resolucion 1319 del Ministerio del Interior para la reivindicacion y promocion de derechos de comunidades negras, afrocolombianas, raizales y palenqueras.' },
+    { year: '2023', title: 'Registro ESAL DIAN', desc: 'Resolucion DIAN ESAL No. 2023035272639302634 del 30 de agosto de 2023.' },
+    { year: '2026', title: 'Portafolio de servicios', desc: 'Consolidacion de programas de vivienda digna, educacion, salud, seguridad alimentaria, cultura, deporte, agroindustria e innovacion.' },
+    { year: '2030', title: 'Vision institucional', desc: 'Ser una organizacion reconocida nacional e internacionalmente por proyectos de calidad, transparencia y compromiso ambiental.' }
   ];
 
   return (
@@ -29,10 +29,10 @@ export default function AboutUs() {
       
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
-        <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Our Foundation</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Our Story & Purpose</h1>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Nuestra fundacion</span>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Historia y proposito</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Grounded in Christian values and guided by a belief in the transformative power of education, healthcare, and thriving communities across Africa.
+          FUNDEPACIFICO ONG Internacional reivindica y promueve los derechos humanos, territoriales, sociales, economicos, culturales, ambientales y politicos de comunidades negras, afrocolombianas, raizales y palenqueras.
         </p>
       </section>
 
@@ -42,9 +42,9 @@ export default function AboutUs() {
           <div className="p-3 bg-brand-lime/10 border border-brand-lime/30 rounded-2xl text-brand-lime w-fit">
             <Sparkles className="w-6 h-6" />
           </div>
-          <h3 className="text-xl font-bold font-display text-white">Our Vision</h3>
+          <h3 className="text-xl font-bold font-display text-white">Vision</h3>
           <p className="text-xs text-slate-300 leading-relaxed">
-            An empowered Africa where every individual has the opportunity to fulfill their God-given potential and build thriving, self-reliant communities.
+            En 2030, ser una organizacion reconocida nacional e internacionalmente por proyectos de calidad, personal competente, compromiso ambiental, buen manejo de recursos y transparencia.
           </p>
         </div>
 
@@ -52,9 +52,9 @@ export default function AboutUs() {
           <div className="p-3 bg-brand-gold/10 border border-brand-gold/30 rounded-2xl text-brand-gold w-fit">
             <Heart className="w-6 h-6" />
           </div>
-          <h3 className="text-xl font-bold font-display text-white">Our Mission</h3>
+          <h3 className="text-xl font-bold font-display text-white">Mision</h3>
           <p className="text-xs text-slate-300 leading-relaxed">
-            To invest in human capital development through high-impact interventions in education, global health, sustainable livelihoods, and emergency response.
+            Contribuir desde los territorios con proyectos humanitarios, vivienda digna, educacion, salud, seguridad alimentaria, recreacion, deporte, cultura y agroindustria para mejorar la calidad de vida.
           </p>
         </div>
 
@@ -62,9 +62,9 @@ export default function AboutUs() {
           <div className="p-3 bg-brand-blue/20 border border-brand-blue/40 rounded-2xl text-brand-blue w-fit">
             <ShieldCheck className="w-6 h-6 text-white" />
           </div>
-          <h3 className="text-xl font-bold font-display text-white">Our Values</h3>
+          <h3 className="text-xl font-bold font-display text-white">Valores</h3>
           <p className="text-xs text-slate-300 leading-relaxed">
-            Driven by faith, integrity, compassionate service, excellence, and stewardship of community resources.
+            Solidaridad, compromiso, excelencia, participacion, transparencia y unidad guian nuestro trabajo con comunidades, aliados, donantes y beneficiarios.
           </p>
         </div>
       </section>
@@ -73,8 +73,8 @@ export default function AboutUs() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-card bg-slate-900/60 rounded-3xl p-8 lg:p-12 border border-slate-800 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Leadership</span>
-            <h2 className="text-3xl font-black font-display text-white">Founder & Director</h2>
+            <span className="text-xs font-bold uppercase tracking-widest text-brand-gold">Liderazgo</span>
+            <h2 className="text-3xl font-black font-display text-white">Fundador y director</h2>
           </div>
 
           <div className="grid grid-cols-1 gap-8">
@@ -106,8 +106,8 @@ export default function AboutUs() {
       {/* Timeline */}
       <section className="max-w-4xl mx-auto px-4 space-y-8">
         <div className="text-center space-y-2">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Milestones</span>
-          <h2 className="text-3xl font-black font-display text-white">Three Decades of Impact</h2>
+          <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Hitos</span>
+          <h2 className="text-3xl font-black font-display text-white">Trayectoria institucional</h2>
         </div>
 
         <div className="space-y-6 relative border-l-2 border-slate-800 ml-4 sm:ml-8 pl-6 sm:pl-10">
