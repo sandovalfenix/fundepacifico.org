@@ -52,7 +52,7 @@ export default function AboutUs() {
           <div className="p-3 bg-brand-gold/10 border border-brand-gold/30 rounded-2xl text-brand-gold w-fit">
             <Heart className="w-6 h-6" />
           </div>
-          <h3 className="text-xl font-bold font-display text-white">Mision</h3>
+          <h3 className="text-xl font-bold font-display text-white">Misión</h3>
           <p className="text-xs text-slate-300 leading-relaxed">
             Contribuir desde los territorios con proyectos humanitarios, vivienda digna, educacion, salud, seguridad alimentaria, recreacion, deporte, cultura y agroindustria para mejorar la calidad de vida.
           </p>

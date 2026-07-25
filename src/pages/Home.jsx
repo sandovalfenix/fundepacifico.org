@@ -1646,7 +1646,7 @@ export default function Home({
             >
               <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>Sumese a la mision</h2>
+            <h2>Alianzas</h2>
           </div>
           <div className="callToAction_heading__qdhzD text_xxl__KYbm5">
             <h3 style={{ lineHeight: "1" }}>
@@ -1705,7 +1705,7 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>Nuestra mision</span>
+              <span>Nuestra misión</span>
             </a>
           </div>
         </div>
