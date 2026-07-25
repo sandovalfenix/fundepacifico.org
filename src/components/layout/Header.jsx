@@ -282,7 +282,7 @@ export default function Header({ onOpenGetInvolved }) {
         <div className="nav_menu___JiiA text_tag__kpI4A">
           <div className="nav_dropdown__WQk53">
             <button className="nav_label__HMaLQ">
-              Que hacemos
+              ¿Qué hacemos?
               <svg
                 className="nav_arrow__98gfz"
                 xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ export default function Header({ onOpenGetInvolved }) {
           </div>
           <div className="nav_dropdown__WQk53">
             <button className="nav_label__HMaLQ">
-              Quienes somos
+              ¿Quiénes somos?
               <svg
                 className="nav_arrow__98gfz"
                 xmlns="http://www.w3.org/2000/svg"
@@ -329,7 +329,7 @@ export default function Header({ onOpenGetInvolved }) {
             className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID"
             href="/impact"
           >
-            Impacto
+            Trayectoria
           </a>
           <a
             className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID"
@@ -355,7 +355,7 @@ export default function Header({ onOpenGetInvolved }) {
                 d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
               ></path>
             </svg>
-            <span>Aliarse</span>
+            <span>Unirse</span>
           </button>
           {isMobile && (
             <button
@@ -656,7 +656,7 @@ export default function Header({ onOpenGetInvolved }) {
       >
         <div className="nav_accordionWrap__lR3MH">
           <button className="button_root__fMfbx text_l__zBmW8 nav_dropdownButton__JK1HY">
-            Que hacemos
+            ¿Qué hacemos?
             <svg
               className="nav_arrow__98gfz"
               xmlns="http://www.w3.org/2000/svg"
@@ -708,7 +708,7 @@ export default function Header({ onOpenGetInvolved }) {
         </div>
         <div className="nav_accordionWrap__lR3MH">
           <button className="button_root__fMfbx text_l__zBmW8 nav_dropdownButton__JK1HY">
-            Quienes somos
+            ¿Quiénes somos?
             <svg
               className="nav_arrow__98gfz"
               xmlns="http://www.w3.org/2000/svg"
@@ -784,7 +784,7 @@ export default function Header({ onOpenGetInvolved }) {
           className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_l__zBmW8"
           href="/impact"
         >
-          Impacto
+          Trayectoria
         </a>
         <a
           className="link_root__iDASX link_noUnder__gFrbm nav_link__LPzID text_l__zBmW8"

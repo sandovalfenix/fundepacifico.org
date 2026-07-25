@@ -4,15 +4,15 @@ import { Award, Download, TrendingUp, Users, HeartPulse, Sprout, ShieldAlert } f
 import { motion } from 'framer-motion';
 
 export default function OurImpact() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const categories = ['All', 'Historia', 'Legal', 'Vision', 'Programas', 'Territorio'];
+  const categories = ['Todos', 'Historia', 'Legal', 'Visión', 'Programas', 'Portafolio'];
 
-  const filteredStats = selectedCategory === 'All'
+  const filteredStats = selectedCategory === 'Todos'
     ? siteData.stats
     : siteData.stats.filter(s => s.category === selectedCategory);
 
@@ -21,10 +21,10 @@ export default function OurImpact() {
       
       {/* Header */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
-        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Impacto institucional</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Indicadores clave</h1>
+        <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Trayectoria institucional</span>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Cifras e Hitos</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          Una lectura simple de la trayectoria, reconocimiento legal, lineas de accion y proyeccion de FUNDEPACIFICO.
+          Una lectura simple de la trayectoria, reconocimiento legal, líneas de acción y proyección de FUNDEPACIFICO.
         </p>
 
         <div className="pt-2">

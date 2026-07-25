@@ -2,21 +2,21 @@ import React, { useState } from "react";
 
 const menuItems = [
   {
-    heading: "Que hacemos",
+    heading: "¿Qué hacemos?",
     links: [
       ["Vivienda digna", "/what-we-do#vivienda-digna"],
-      ["Capacitacion y formacion", "/what-we-do#educacion-formacion"],
+      ["Capacitación y formación", "/what-we-do#educacion-formacion"],
       ["Emprendimiento y agroindustria", "/what-we-do#emprendimiento-agroindustria"],
       ["Redes de apoyo", "/what-we-do#redes-apoyo"],
     ],
   },
   {
-    heading: "Quienes somos",
+    heading: "¿Quiénes somos?",
     links: [
       ["Historia", "/about"],
       ["Liderazgo", "/about#leadership"],
       ["Valores", "/about"],
-      ["Impacto", "/impact"],
+      ["Trayectoria", "/impact"],
     ],
   },
   {

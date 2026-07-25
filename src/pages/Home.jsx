@@ -442,11 +442,11 @@ export default function Home({
       document.querySelectorAll(".callToAction_button__JtFqK"),
     );
     const ctaHandler = (event) => {
-      if (event.currentTarget.textContent?.includes("Aliarse"))
+      if (event.currentTarget.textContent?.includes("Unirse") || event.currentTarget.textContent?.includes("Ser parte"))
         onOpenGetInvolved();
     };
     ctaButtons.forEach((button) => {
-      if (button.textContent?.includes("Aliarse"))
+      if (button.textContent?.includes("Unirse") || button.textContent?.includes("Ser parte"))
         button.addEventListener("click", ctaHandler);
     });
 
@@ -526,7 +526,7 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>Que hacemos</span>
+              <span>¿Qué hacemos?</span>
             </a>
           </div>
         </div>
@@ -543,7 +543,7 @@ export default function Home({
             >
               <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
             </svg>
-            <h2>Quienes somos</h2>
+            <h2>¿Quiénes somos?</h2>
           </div>
           <div className="teamBlock_heading__udUw9 text_xxl__KYbm5">
             <h3 style={{ lineHeight: "1" }}>
@@ -959,7 +959,7 @@ export default function Home({
               >
                 <path fill="#1A1A1A" d="M0 0h8v8H0z"></path>
               </svg>
-              <h2>Que hacemos</h2>
+              <h2>¿Qué hacemos?</h2>
             </div>
             <div className="desktopView_item__knw15 desktopView_active___w9Ac">
               <div className="desktopView_heading__Jv0_3 text_m__Uz6HW">
@@ -1286,7 +1286,7 @@ export default function Home({
       <section className="mobileView_root__mHRYK" data-story-block="true">
         <div className="mobileView_tag__dsJYr text_tag__kpI4A">
           <SquareIcon />
-          <h2>Que hacemos</h2>
+          <h2>¿Qué hacemos?</h2>
         </div>
         {whatWeDoItems.map((item, index) => (
           <div
@@ -1510,7 +1510,7 @@ export default function Home({
                 >
                   <path fill="#fff" d="M0 0h8v8H0z"></path>
                 </svg>
-                <h2>Impacto</h2>
+                <h2>Trayectoria</h2>
               </div>
               <div
                 className="statsBanner_item__zD5NK statsBanner_active__5eZ9u"
@@ -1519,20 +1519,6 @@ export default function Home({
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
                     2010
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
                   </div>
                   <div className="text_sp__zYahz">
                     Inicio de la labor social en Buenaventura.
@@ -1543,7 +1529,7 @@ export default function Home({
                     2018
                   </div>
                   <div className="text_sp__zYahz">
-                    Resolucion 1319 del Ministerio del Interior.
+                    Resolución 1319 del Ministerio del Interior.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
@@ -1551,7 +1537,7 @@ export default function Home({
                     2023
                   </div>
                   <div className="text_sp__zYahz">
-                    Registro ESAL DIAN para la fundacion.
+                    Registro ESAL DIAN para la fundación.
                   </div>
                 </div>
               </div>
@@ -1561,51 +1547,23 @@ export default function Home({
                     5
                   </div>
                   <div className="text_sp__zYahz">
-                    Pilares de accion comunitaria.
+                    Pilares de acción comunitaria.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
                     2030
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Vision de reconocimiento nacional e internacional.
+                    Visión de reconocimiento nacional e internacional.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    1
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
+                    1996
                   </div>
                   <div className="text_sp__zYahz">
-                    Sede principal en Buenaventura, Valle del Cauca.
+                    Año de consolidación comunitaria en la región.
                   </div>
                 </div>
               </div>
@@ -1615,51 +1573,23 @@ export default function Home({
                     6
                   </div>
                   <div className="text_sp__zYahz">
-                    Valores institucionales que guian el trabajo.
+                    Valores institucionales que guían el trabajo.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
                     2026
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Portafolio de servicios actualizado.
+                    Portafolio de servicios proyectado.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    316
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
+                    100%
                   </div>
                   <div className="text_sp__zYahz">
-                    228 3235 como canal telefonico de contacto.
+                    Compromiso social y territorial con comunidades vulnerables.
                   </div>
                 </div>
               </div>
@@ -1667,52 +1597,24 @@ export default function Home({
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
                     1319
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
                   </div>
                   <div className="text_sp__zYahz">
-                    Resolucion de reconocimiento institucional.
+                    Resolución de reconocimiento institucional.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
                   <div className="statsBanner_number__9mrb8 text_xl__DB7xZ">
-                    10A-08
-                    <svg
-                      className="statsBanner_plus__KPp65"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="20"
-                      fill="none"
-                      viewBox="0 0 12 20"
-                    >
-                      <path
-                        stroke="#fff"
-                        strokeWidth="2"
-                        d="M5.996 6v10M11 10.996H1"
-                      ></path>
-                    </svg>
+                    4
                   </div>
                   <div className="text_sp__zYahz">
-                    Direccion de la sede en Buenaventura.
+                    Comunidades étnicas prioritarias en el litoral Pacífico.
                   </div>
                 </div>
               </div>
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7 statsBanner_button__qW4OO"
                 target="_self"
-                href="https://higherlifefoundation.org/our-impact"
+                href="/impact"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1784,7 +1686,7 @@ export default function Home({
                   d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"
                 ></path>
               </svg>
-              <span>Aliarse</span>
+              <span>Unirse</span>
             </button>
             <a
               className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7 callToAction_button__JtFqK"

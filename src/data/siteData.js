@@ -4011,11 +4011,11 @@ Object.assign(siteData, {
   ],
   stats: [
     { number: "2010", label: "Inicio de la labor social en Buenaventura, Valle del Cauca.", category: "Historia" },
-    { number: "2018", label: "Resolucion 1319 del Ministerio del Interior para comunidades negras, afrocolombianas, raizales y palenqueras.", category: "Legal" },
+    { number: "2018", label: "Resolución 1319 del Ministerio del Interior para comunidades negras, afrocolombianas, raizales y palenqueras.", category: "Legal" },
     { number: "2023", label: "Registro ESAL DIAN No. 2023035272639302634.", category: "Legal" },
-    { number: "2030", label: "Vision de reconocimiento nacional e internacional con proyectos de calidad y transparencia.", category: "Vision" },
-    { number: "5+", label: "Lineas de accion: vivienda, educacion, salud, cultura, deporte, seguridad alimentaria, agroindustria e innovacion.", category: "Programas" },
-    { number: "1", label: "Sede principal en Buenaventura, Distrito Especial, Valle del Cauca.", category: "Territorio" },
+    { number: "2030", label: "Visión de reconocimiento nacional e internacional con proyectos de calidad y transparencia.", category: "Visión" },
+    { number: "5", label: "Líneas de acción: vivienda, educación, salud, cultura, deporte, seguridad alimentaria, agroindustria e innovación.", category: "Programas" },
+    { number: "2026", label: "Ejecución del Portafolio de Servicios para el desarrollo integral del litoral Pacífico Colombiano.", category: "Portafolio" },
   ],
   offices: [
     {

@@ -31,7 +31,7 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
       {/* Header */}
       <section className="max-w-4xl mx-auto px-4 text-center space-y-4">
         <span className="text-xs font-bold uppercase tracking-widest text-brand-lime">Pilares estrategicos</span>
-        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">Que hacemos</h1>
+        <h1 className="text-4xl sm:text-6xl font-black font-display text-white">¿Qué hacemos?</h1>
         <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
           FUNDEPACIFICO ONG Internacional formula, gestiona y ejecuta programas sociales, comunitarios y ambientales para mejorar la calidad de vida de comunidades vulnerables en Buenaventura, el Valle del Cauca y otros territorios de Colombia.
         </p>
@@ -78,7 +78,7 @@ export default function WhatWeDo({ onOpenGetInvolved }) {
                     onClick={onOpenGetInvolved}
                     className="px-6 py-3 rounded-full bg-brand-lime hover:bg-[#b0f065] text-slate-950 font-bold text-xs transition-colors flex items-center gap-2 shadow-glow-lime"
                   >
-                    <span>Aliarse en {pillar.title}</span>
+                    <span>Ser parte de {pillar.title}</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

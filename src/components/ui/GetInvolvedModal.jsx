@@ -49,7 +49,7 @@ export default function GetInvolvedModal({ isOpen, onClose }) {
                   <Heart className="w-6 h-6 fill-brand-lime text-brand-lime" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white font-display">Aliarse con FUNDEPACIFICO</h3>
+                  <h3 className="text-xl font-bold text-white font-display">Ser parte de FUNDEPACIFICO</h3>
                   <p className="text-xs text-slate-400">Construyamos proyectos sociales y comunitarios desde el territorio.</p>
                 </div>
               </div>
