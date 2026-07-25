@@ -502,6 +502,7 @@ export default function Home({
           </div>
           <h1
             className="primary_heading__ikH5_ text_xxl__KYbm5 split"
+            style={{ wordBreak: "normal", overflowWrap: "normal" }}
             aria-label="Promovemos derechos, oportunidades y desarrollo para el Pacifico colombiano."
           >
             Promovemos derechos, oportunidades y desarrollo para el Pacifico
@@ -546,7 +547,7 @@ export default function Home({
             <h2>¿Quiénes somos?</h2>
           </div>
           <div className="teamBlock_heading__udUw9 text_xxl__KYbm5">
-            <h3 style={{ lineHeight: "1" }}>
+            <h3 style={{ lineHeight: "1", fontSize: "clamp(2.2rem, 5vw, 4.5rem)", wordBreak: "normal", overflowWrap: "normal" }}>
               FUNDEPACIFICO <br />
               <span className="text_grey__nqMgS">ONG Internacional</span>
             </h3>
@@ -1649,8 +1650,8 @@ export default function Home({
             <h2>Alianzas</h2>
           </div>
           <div className="callToAction_heading__qdhzD text_xxl__KYbm5">
-            <h3 style={{ lineHeight: "1" }}>
-              Construyamos <br />
+            <h3 style={{ lineHeight: "1", fontSize: "clamp(2.2rem, 5vw, 4.5rem)", wordBreak: "normal", overflowWrap: "normal" }}>
+              Creemos <br />
               <span className="text_grey__nqMgS">Juntos</span>
             </h3>
           </div>
