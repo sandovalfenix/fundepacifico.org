@@ -18,8 +18,8 @@ export default function AboutUs() {
 
   const timeline = [
     { year: '2010', title: 'Inicio de labor social', desc: 'FUNDEPACIFICO inicia su trabajo comunitario en Buenaventura, ciudad puerto, biodiversa, industrial y ecoturistica.' },
-    { year: '2018', title: 'Reconocimiento institucional', desc: 'Resolucion 1319 del Ministerio del Interior para la reivindicacion y promocion de derechos de comunidades negras, afrocolombianas, raizales y palenqueras.' },
-    { year: '2023', title: 'Registro ESAL DIAN', desc: 'Resolucion DIAN ESAL No. 2023035272639302634 del 30 de agosto de 2023.' },
+    { year: '2018', title: 'Reconocimiento institucional', desc: 'RESOLUCIÓN MINISTERIO DEL INTERIOR / DIRECCIÓN DE ASUNTOS ÉTNICOS N° 1319 DEL 15 DE NOVIEMBRE DE 2018.' },
+    { year: '2023', title: 'Registro ESAL DIAN', desc: 'RESOLUCIÓN DIAN – ESAL No. 2023035272639302634 del 30 de AGOSTO del 2023.' },
     { year: '2026', title: 'Portafolio de servicios', desc: 'Consolidacion de programas de vivienda digna, educacion, salud, seguridad alimentaria, cultura, deporte, agroindustria e innovacion.' },
     { year: '2030', title: 'Vision institucional', desc: 'Ser una organizacion reconocida nacional e internacionalmente por proyectos de calidad, transparencia y compromiso ambiental.' }
   ];

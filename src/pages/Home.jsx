@@ -1529,7 +1529,7 @@ export default function Home({
                     2018
                   </div>
                   <div className="text_sp__zYahz">
-                    Resolución 1319 del Ministerio del Interior.
+                    RESOLUCIÓN MINISTERIO DEL INTERIOR / DIRECCIÓN DE ASUNTOS ÉTNICOS N° 1319 DEL 15 DE NOVIEMBRE DE 2018.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
@@ -1537,7 +1537,7 @@ export default function Home({
                     2023
                   </div>
                   <div className="text_sp__zYahz">
-                    Registro ESAL DIAN para la fundación.
+                    RESOLUCIÓN DIAN – ESAL No. 2023035272639302634 del 30 de AGOSTO del 2023.
                   </div>
                 </div>
               </div>
@@ -1599,7 +1599,7 @@ export default function Home({
                     1319
                   </div>
                   <div className="text_sp__zYahz">
-                    Resolución de reconocimiento institucional.
+                    RESOLUCIÓN MINISTERIO DEL INTERIOR / DIRECCIÓN DE ASUNTOS ÉTNICOS N° 1319 DEL 15 DE NOVIEMBRE DE 2018.
                   </div>
                 </div>
                 <div className="statsBanner_stat__3IdEb">
