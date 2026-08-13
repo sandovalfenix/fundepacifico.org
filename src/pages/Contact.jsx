@@ -170,11 +170,11 @@ export default function Contact() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-slate-400 shrink-0" />
-                <span>Phone: {siteData.offices[selectedOffice].phone}</span>
+                <span>Telefono: {siteData.offices[selectedOffice].phone}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-slate-400 shrink-0" />
-                <span>Email: {siteData.offices[selectedOffice].email}</span>
+                <span>Correo: {siteData.offices[selectedOffice].email}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-slate-400 shrink-0" />

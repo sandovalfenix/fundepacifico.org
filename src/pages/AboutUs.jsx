@@ -12,7 +12,7 @@ export default function AboutUs() {
     role: "CEO · Founder · Executive Director",
   };
   const founderSummary =
-    "CEO, Founder and Executive Director of Fundepacifico ONG Internacional. Business Administration professional with a Master's in Senior Management and an MBA in Business Administration, with extensive continuing professional development.";
+    "CEO, fundador y director ejecutivo de Fundepacifico ONG Internacional. Administrador de empresas, magister en Alta Gerencia y MBA en Administracion de Empresas, con amplia formacion profesional continua.";
   const founderLinkedIn =
     "https://www.linkedin.com/in/orlando-arrechea-orobio-4a4a911b5/";
 

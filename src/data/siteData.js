@@ -4026,7 +4026,7 @@ Object.assign(siteData, {
       email: "onginternacional@fundepacifico.org",
     },
     {
-      country: "Direccion legal",
+      country: "Dirección legal",
       city: "Representante legal",
       address: "Orlando Arrechea Orobio, Consultivo Departamental de Comunidades Negras del Valle del Cauca",
       phone: "+57 316 228 3235",
