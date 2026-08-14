@@ -1,6 +1,7 @@
 node_modules/
 scratch/
 dist/
+.firebase/
 .env
 .env.*
 npm-debug.log*

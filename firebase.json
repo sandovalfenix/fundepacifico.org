@@ -1,0 +1,45 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/branding/founder-strive.png"
+    ],
+    "redirects": [
+      { "source": "/what-we-do", "destination": "/", "type": 302 },
+      { "source": "/what-we-do/**", "destination": "/", "type": 302 },
+      { "source": "/about", "destination": "/", "type": 302 },
+      { "source": "/about/**", "destination": "/", "type": 302 },
+      { "source": "/impact", "destination": "/", "type": 302 },
+      { "source": "/impact/**", "destination": "/", "type": 302 },
+      { "source": "/grantees", "destination": "/", "type": 302 },
+      { "source": "/grantees/**", "destination": "/", "type": 302 },
+      { "source": "/resources", "destination": "/", "type": 302 },
+      { "source": "/resources/**", "destination": "/", "type": 302 },
+      { "source": "/contact", "destination": "/", "type": 302 },
+      { "source": "/contact/**", "destination": "/", "type": 302 }
+    ],
+    "rewrites": [
+      {
+        "source": "!**/*.@(avif|jpg|jpeg|png|svg|webp|ico|woff2|mp4|js|css|json|html)",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      },
+      {
+        "source": "**/*.@(avif|jpg|jpeg|png|svg|webp|ico|woff2|mp4)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }]
+      },
+      {
+        "source": "/index.html",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      }
+    ]
+  }
+}

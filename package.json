@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "assets:build": "python scripts/build_brand_assets.py",
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"

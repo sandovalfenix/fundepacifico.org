@@ -6,6 +6,7 @@
 - Implementation: `http://127.0.0.1:5173/`.
 - Areas checked: hero, header, navigation, responsive typography, mobile menu, animation structure, and viewport behavior.
 - Standing rule: every section-level change must be verified on mobile at `390 x 844` as well as the relevant desktop/reference breakpoint before it is marked passed.
+- A partir de la Sesión 7, el contenido fotográfico diverge intencionalmente de la referencia Higherlife. Solo geometría, estructura, tipografía, comportamiento de scroll y parallax siguen siendo comparables. Las diferencias de *contenido* de imagen son esperadas, no hallazgos.
 
 ## Visual Comparisons
 
@@ -59,6 +60,14 @@
 - Footer typography/line follow-up: desktop footer titles are explicitly locked to the original `12rem / 14rem / 700` uppercase style, and the office separator line is locked to `1rem` with `hsla(0, 0%, 100%, 0.062745098)`.
 - Bottom-of-page nav follow-up: the fixed navbar now reappears at the footer/page end instead of staying translated out of view while scrolling down.
 - Bottom-of-page nav color follow-up: at the final footer position, desktop nav links switch back to the original black text state so the menu labels remain visible on the white navbar.
+- Sesión 7 imaginería de marca: el clip-reveal de pilares en desktop (`desktopView_root__zLZeZ`) sigue funcionando con los nuevos archivos AVIF.
+- Sesión 7 encuadre: el recorte apaisado de "What We Do" conserva los sujetos de forma adecuada sin decapitar ni recortar información crítica.
+- Sesión 7 mega-menú: los tres thumbnails del menú desplegable (`Header.jsx`) cargan a `16vw` con las nuevas portadas y arte institucional (`menu-what-we-do`, `menu-about`, `portafolio-cover`).
+- Sesión 7 `mediaBanner`: la sección "Nuestro compromiso" migró exitosamente de video (`.mp4`) a imagen tratada (`media-banner-compromiso-2560x1440.avif`). Conserva el tema `data-nav-theme="dark"` y el parallax de scroll (confirmando match del selector `.mediaBanner_image___tzHA img`). Se eliminó el botón overlay redundante.
+- Sesión 7 `statsBanner`: `currentSrc` sirve el asset AVIF vertical (`1560x2988`) a `390 x 844` y el asset AVIF horizontal (`2880x1620`) a `≥1025px`. No hay huecos en blanco antes del CTA.
+- Sesión 7 galería: se corrigió el bug de `translateY(-40%)` a `translateY(0%)` en la segunda diapositiva, y se arregló la traslación del carrusel en JS de eje X a eje Y (`translate3d(0px, ${(i - activeGallery) * 100}%, 0px)`) para alinearlo con el contenedor vertical flex (`.gallery_container__M28yn`). Ambas diapositivas ("Líneas de acción" y "Objeto social") se visualizan de forma completa al hacer clic en las flechas de navegación y durante el autoplay automático de 6.5 s.
+- Sesión 7 badges y enlaces: los tres badges de la franja del Home (`badge-portafolio-35x40.svg`, `badge-fundacion-54x40.svg`, `badge-contacto-63x40.svg`) renderizan correctamente con viewBox exactos y `aria-label`/`alt` accesibles. Se corrigieron los enlaces antiguos a Amazon/Audible en `Home.jsx` y `BookOrderModal.jsx` hacia rutas internas (`/contact`, `/about`, `/what-we-do`).
+- Sesión 7 metadata e `index.html`: `lang="es-CO"`, título institucional, set de favicons (`.ico`, PNGs 16/32, apple-touch 180, theme-color `#12A74B`) y bloque OpenGraph/Twitter activados.
 - Production build completes successfully.
 - Fresh desktop and mobile browser sessions report no application errors.
 
@@ -91,5 +100,6 @@
 - Footer alignment responsive check: mobile keeps logo/menu/offices aligned to the same `12px` content edge at `390 x 844`, with desktop-only direct links hidden and no horizontal overflow.
 - Bottom-of-page responsive check: at desktop and `390 x 844`, scrolling to the final page position leaves the navbar visible with `transform: translate(0px, 0px)`.
 - Footer-end navbar menu check: at `1880 x 1070`, the desktop menu remains `display: flex` and all five labels render in `rgb(26, 26, 26)` at the final scroll position; mobile keeps the desktop menu hidden and has no overflow.
+- Sesión 7: rebrand fotográfico e imaginería de marca. Cableado de las 36 referencias a assets AVIF/SVG con nombres semánticos, conversión de mediaBanner a imagen, corrección del bug translateY(-40%) en galería, creación a mano de badges SVG y actualización de metadatos/favicons en index.html.
 
 final result: passed

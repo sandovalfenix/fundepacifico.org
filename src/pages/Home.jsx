@@ -6,49 +6,49 @@ const whatWeDoItems = [
     heading:
       "Gestionamos proyectos de vivienda digna para comunidades vulnerables.",
     body: "Promovemos soluciones habitacionales con alto componente social, articulando recursos, aliados y participacion comunitaria para mejorar la calidad de vida en los territorios.",
-    href: "/what-we-do#vivienda-digna",
+    href: "#what-we-do",
     label: "Mas informacion",
     alt: "Vivienda digna",
-    src: "/assets/23e65db63e52ff7906f61a2cfbfae23d15c33892-1404x1976.avif",
+    src: "/assets/pillar-vivienda-digna-1404x1976.avif",
   },
   {
     tag: "Capacitacion y formacion",
     heading:
       "Fortalecemos capacidades mediante educacion, talleres y procesos formativos.",
     body: "Realizamos talleres, diplomados, seminarios, proyectos de investigacion y acompanamiento para ampliar oportunidades educativas y comunitarias.",
-    href: "/what-we-do#educacion-formacion",
+    href: "#what-we-do",
     label: "Mas informacion",
     alt: "Capacitacion y formacion",
-    src: "/assets/ae85e1f1fd04e4429416977427d2431f88682a1b-1404x1976.avif",
+    src: "/assets/pillar-capacitacion-formacion-1404x1976.avif",
   },
   {
     tag: "Emprendimiento y agroindustria",
     heading:
       "Impulsamos unidades productivas sostenibles para asociaciones comunitarias.",
     body: "Asesoramos emprendimientos agropecuarios, agroindustriales y de servicios para que cooperativas y comunidades generen ingresos y desarrollo local.",
-    href: "/what-we-do#emprendimiento-agroindustria",
+    href: "#what-we-do",
     label: "Mas informacion",
     alt: "Emprendimiento y agroindustria",
-    src: "/assets/f3ff4267f742dcc389da2b428da399a461005fc5-1404x1976.jpeg",
+    src: "/assets/pillar-emprendimiento-agroindustria-1404x1976.avif",
   },
   {
     tag: "Redes de apoyo",
     heading: "Conectamos comunidades, cooperativas, instituciones y aliados.",
     body: "Conformamos redes de apoyo para potenciar acciones sociales, ampliar oportunidades y fortalecer el tejido comunitario en cada territorio.",
-    href: "/what-we-do#redes-apoyo",
+    href: "#what-we-do",
     label: "Mas informacion",
     alt: "Redes de apoyo",
-    src: "/assets/b2a99047570a6606e1e7009d4d62a630f705fa9d-1404x1976.avif",
+    src: "/assets/pillar-redes-apoyo-1404x1976.avif",
   },
   {
     tag: "Obras civiles",
     heading:
       "Gestionamos infraestructura social al servicio de las comunidades.",
     body: "Acompanamos obras deportivas, culturales, educativas, comunitarias, religiosas y viales cuando responden a necesidades sociales y al objeto de la fundacion.",
-    href: "/what-we-do#obras-civiles",
+    href: "#what-we-do",
     label: "Mas informacion",
     alt: "Obras civiles comunitarias",
-    src: "/assets/529ffb690991e870fd14f04b26ea087e27c84d9f-1404x1976.avif",
+    src: "/assets/pillar-obras-civiles-1404x1976.avif",
   },
 ];
 
@@ -187,11 +187,11 @@ export default function Home({
         const isActive = Number(item.dataset.slideIndex) === activeGallery;
         item.classList.toggle("gallery_slideActive__SbygQ", isActive);
       });
-      gallerySlides.forEach((slide, i) => {
-        slide.style.transform = `translate3d(${(i - activeGallery) * 100}%, 0px, 0px)`;
+      gallerySlides.forEach((slide) => {
+        slide.style.transform = "translate3d(0px, 0px, 0px)";
       });
       if (galleryContainer)
-        galleryContainer.style.transform = "translate3d(0px, 0px, 0px)";
+        galleryContainer.style.transform = `translate3d(0px, ${-activeGallery * 100}%, 0px)`;
       if (galleryIndex)
         galleryIndex.textContent = `${String(activeGallery + 1).padStart(2, "0")} / 02`;
       if (galleryProgress) {
@@ -512,7 +512,7 @@ export default function Home({
               className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7 ani_fadeUp20__qwydY"
               style={{ "--delay": "0.75s" }}
               target="_self"
-              href="/what-we-do"
+              href="#what-we-do"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -625,7 +625,7 @@ export default function Home({
           <a
             className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7 teamBlock_button__ICL4O"
             target="_self"
-            href="/about"
+            href="#team-block"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -779,7 +779,7 @@ export default function Home({
                 <a
                   className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7"
                   target="_self"
-                  href="/what-we-do"
+                  href="#what-we-do"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -801,54 +801,55 @@ export default function Home({
                   Consulte el portafolio institucional
                 </p>
                 <div className="gallery_buttonGroup__CpSbB">
-                  <a
+                  <div
                     className="imageButton_root__ZYop_"
-                    target="_self"
-                    href="/resources"
+                    aria-label="Portafolio de Servicios 2026"
                   >
                     <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
                       <img
-                        alt=""
+                        alt="Portafolio de Servicios 2026"
                         loading="lazy"
                         width="35"
                         height="40"
                         decoding="async"
                         style={{ color: "transparent", opacity: "1" }}
-                        src="/assets/65ff619b209b80ac47ca810bee5d8b4afd54746d-35x40.svg"
+                        src="/assets/badge-portafolio-35x40.svg"
+                      />
+                    </picture>
+                  </div>
+                  <a
+                    className="imageButton_root__ZYop_"
+                    target="_self"
+                    href="#team-block"
+                    aria-label="Conocer la Fundación"
+                  >
+                    <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
+                      <img
+                        alt="Conocer la Fundación"
+                        loading="lazy"
+                        width="54"
+                        height="40"
+                        decoding="async"
+                        style={{ color: "transparent", opacity: "1" }}
+                        src="/assets/badge-fundacion-54x40.svg"
                       />
                     </picture>
                   </a>
                   <a
                     className="imageButton_root__ZYop_"
                     target="_self"
-                    href="/about"
+                    href="#contacto"
+                    aria-label="Contacto y Sedes"
                   >
                     <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
                       <img
-                        alt=""
-                        loading="lazy"
-                        width="54"
-                        height="40"
-                        decoding="async"
-                        style={{ color: "transparent", opacity: "1" }}
-                        src="/assets/7cd0044636ebfd27ed9d1eac9c554af056f9116b-54x40.svg"
-                      />
-                    </picture>
-                  </a>
-                  <a
-                    className="imageButton_root__ZYop_"
-                    target="_blank"
-                    href="https://www.amazon.co.uk/gp/aw/d/B0GNT52B87/ref=tmm_aud_swatch_0"
-                  >
-                    <picture className="imageButton_image__FvH21 image_root__mq3ej image_loaded__zdWuW">
-                      <img
-                        alt=""
+                        alt="Contacto y Sedes"
                         loading="lazy"
                         width="63"
                         height="40"
                         decoding="async"
                         style={{ color: "transparent", opacity: "1" }}
-                        src="/assets/b24a5e73041111be5a5f09ef537a4d988d1a8d29-63x40.svg"
+                        src="/assets/badge-contacto-63x40.svg"
                       />
                     </picture>
                   </a>
@@ -873,14 +874,14 @@ export default function Home({
                 >
                   <picture className="image_root__mq3ej image_loaded__zdWuW">
                     <img
-                      alt=""
+                      alt="Galería comunitaria - Proyectos territoriales Fundepacífico"
                       loading="lazy"
-                      width="11567"
-                      height="5985"
+                      width="3200"
+                      height="1656"
                       decoding="async"
                       style={{ color: "transparent", opacity: "1" }}
                       sizes="94vw"
-                      src="/assets/33351f4dd4970eb578789f05e3116cad1afd8435-11567x5985.avif"
+                      src="/assets/gallery-panorama-01-3200x1656.avif"
                     />
                   </picture>
                 </div>
@@ -890,18 +891,18 @@ export default function Home({
               <div className="gallery_parallax__F8eWb">
                 <div
                   className="gallery_parallax__layer__fEGWs"
-                  style={{ transform: "translateY(-40%)" }}
+                  style={{ transform: "translateY(0%)" }}
                 >
                   <picture className="image_root__mq3ej image_loaded__zdWuW">
                     <img
-                      alt=""
+                      alt="Galería comunitaria - Encuentros y comunidades del Pacífico"
                       loading="lazy"
-                      width="5664"
-                      height="3144"
+                      width="3200"
+                      height="1778"
                       decoding="async"
                       style={{ color: "transparent", opacity: "1" }}
                       sizes="94vw"
-                      src="/assets/8a8d0f2f80d5aa8c28c081863e5a3158600af15e-5664x3144.jpeg"
+                      src="/assets/gallery-panorama-02-3200x1778.avif"
                     />
                   </picture>
                 </div>
@@ -911,21 +912,17 @@ export default function Home({
         </div>
       </div>
       <section className="mediaBanner_root__iR8_Z" data-nav-theme="dark">
-        <button
-          className="link_root__iDASX link_noUnder__gFrbm mediaBanner_overlayLink__Ce__l"
-          aria-label="Ver video institucional de FUNDEPACIFICO ONG Internacional"
-          data-hover="component"
-        ></button>
-        <div className="mediaBanner_video__SM94J video_video__EfQ69 video_lazy__Wx4tX video_parallax__HGkT_ video_clickable__Iunlt">
-          <video
-            className="video_hidden__mX2zp"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            src="/teacher-training-program-preview_1080p.mp4"
-          ></video>
+        <div className="mediaBanner_image___tzHA image_root__mq3ej image_loaded__zdWuW">
+          <img
+            alt="Comunidades del litoral Pacífico acompañadas por FUNDEPACIFICO ONG Internacional"
+            loading="lazy"
+            width="2560"
+            height="1440"
+            decoding="async"
+            sizes="100vw"
+            src="/assets/media-banner-compromiso-2560x1440.avif"
+            style={{ color: "transparent", opacity: "1" }}
+          />
         </div>
         <div className="mediaBanner_content__M2HgD">
           <div className="mediaBanner_tag__4fTlv text_tag__kpI4A">
@@ -946,7 +943,7 @@ export default function Home({
           </div>
         </div>
       </section>
-      <section className="desktopView_root__zLZeZ" style={{ height: "600vh" }}>
+      <section className="desktopView_root__zLZeZ" id="what-we-do" style={{ height: "600vh" }}>
         <div className="desktopView_inner__u7n6a">
           <div className="desktopView_innerWrap__l88nM">
             <div className="desktopView_tag__X9iQl text_tag__kpI4A">
@@ -975,7 +972,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="/what-we-do#vivienda-digna"
+                href="#what-we-do"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1006,7 +1003,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="/what-we-do#educacion-formacion"
+                href="#what-we-do"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1036,7 +1033,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="/what-we-do#emprendimiento-agroindustria"
+                href="#what-we-do"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1066,7 +1063,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="/what-we-do#redes-apoyo"
+                href="#what-we-do"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1097,7 +1094,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7"
                 target="_self"
-                href="/what-we-do#obras-civiles"
+                href="#what-we-do"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1194,7 +1191,7 @@ export default function Home({
                   height="1976"
                   decoding="async"
                   sizes="(min-width: 1025px) 24vw, 94vw"
-                  src="/assets/23e65db63e52ff7906f61a2cfbfae23d15c33892-1404x1976.avif"
+                  src="/assets/pillar-vivienda-digna-1404x1976.avif"
                   style={{
                     color: "transparent",
                     opacity: "1",
@@ -1213,7 +1210,7 @@ export default function Home({
                   height="1976"
                   decoding="async"
                   sizes="(min-width: 1025px) 24vw, 94vw"
-                  src="/assets/ae85e1f1fd04e4429416977427d2431f88682a1b-1404x1976.avif"
+                  src="/assets/pillar-capacitacion-formacion-1404x1976.avif"
                   style={{
                     color: "transparent",
                     opacity: "1",
@@ -1232,7 +1229,7 @@ export default function Home({
                   height="1976"
                   decoding="async"
                   sizes="(min-width: 1025px) 24vw, 94vw"
-                  src="/assets/f3ff4267f742dcc389da2b428da399a461005fc5-1404x1976.jpeg"
+                  src="/assets/pillar-emprendimiento-agroindustria-1404x1976.avif"
                   style={{
                     color: "transparent",
                     opacity: "1",
@@ -1251,7 +1248,7 @@ export default function Home({
                   height="1976"
                   decoding="async"
                   sizes="(min-width: 1025px) 24vw, 94vw"
-                  src="/assets/b2a99047570a6606e1e7009d4d62a630f705fa9d-1404x1976.avif"
+                  src="/assets/pillar-redes-apoyo-1404x1976.avif"
                   style={{
                     color: "transparent",
                     opacity: "1",
@@ -1270,7 +1267,7 @@ export default function Home({
                   height="1976"
                   decoding="async"
                   sizes="(min-width: 1025px) 24vw, 94vw"
-                  src="/assets/529ffb690991e870fd14f04b26ea087e27c84d9f-1404x1976.avif"
+                  src="/assets/pillar-obras-civiles-1404x1976.avif"
                   style={{
                     color: "transparent",
                     opacity: "1",
@@ -1340,6 +1337,7 @@ export default function Home({
       </section>
       <section
         className="statsBanner_root__dzRS_"
+        id="indicadores"
         data-stats-banner="true"
         data-nav-theme="dark"
         aria-label="Statistics banner"
@@ -1353,16 +1351,16 @@ export default function Home({
             >
               <source
                 media="(max-width: 1024px)"
-                srcSet="/assets/66d0709c1c2d611dacb98283f8d0a3e23abd577c-1560x2988.avif"
+                srcSet="/assets/stats-indicadores-mobile-1560x2988.avif"
                 width="1560"
                 height="2988"
                 sizes="100vw"
               />
               <source
                 media="(min-width: 1025px)"
-                srcSet="/assets/bb96b0cd61680eef3489e96d0b2ad89d0e8677a3-5760x3240.jpg"
-                width="5760"
-                height="3240"
+                srcSet="/assets/stats-indicadores-desktop-2880x1620.avif"
+                width="2880"
+                height="1620"
                 sizes="100vw"
               />
               <img
@@ -1378,7 +1376,7 @@ export default function Home({
                   willChange: "transform",
                 }}
                 sizes="100vw"
-                src="/assets/66d0709c1c2d611dacb98283f8d0a3e23abd577c-1560x2988.avif"
+                src="/assets/stats-indicadores-mobile-1560x2988.avif"
               />
             </picture>
           </div>
@@ -1388,16 +1386,16 @@ export default function Home({
             >
               <source
                 media="(max-width: 1024px)"
-                srcSet="/assets/5a92a532630f47bc3c651cfb10fc3af92a02deff-1560x2988.avif"
+                srcSet="/assets/stats-reconocimiento-mobile-1560x2988.avif"
                 width="1560"
                 height="2988"
                 sizes="100vw"
               />
               <source
                 media="(min-width: 1025px)"
-                srcSet="/assets/4562c458aefe61879856acd3636a5044df099091-5760x3240.jpg"
-                width="5760"
-                height="3240"
+                srcSet="/assets/stats-reconocimiento-desktop-2880x1620.avif"
+                width="2880"
+                height="1620"
                 sizes="100vw"
               />
               <img
@@ -1413,7 +1411,7 @@ export default function Home({
                   willChange: "transform",
                 }}
                 sizes="100vw"
-                src="/assets/5a92a532630f47bc3c651cfb10fc3af92a02deff-1560x2988.avif"
+                src="/assets/stats-reconocimiento-mobile-1560x2988.avif"
               />
             </picture>
           </div>
@@ -1423,16 +1421,16 @@ export default function Home({
             >
               <source
                 media="(max-width: 1024px)"
-                srcSet="/assets/295760e9d534e65a4a0bed447281bd59dd685938-1560x2988.avif"
+                srcSet="/assets/stats-programas-mobile-1560x2988.avif"
                 width="1560"
                 height="2988"
                 sizes="100vw"
               />
               <source
                 media="(min-width: 1025px)"
-                srcSet="/assets/5861455a0b25defffc74bf0e08b1b14a1ce1804d-5760x3240.jpg"
-                width="5760"
-                height="3240"
+                srcSet="/assets/stats-programas-desktop-2880x1620.avif"
+                width="2880"
+                height="1620"
                 sizes="100vw"
               />
               <img
@@ -1448,7 +1446,7 @@ export default function Home({
                   willChange: "transform",
                 }}
                 sizes="100vw"
-                src="/assets/295760e9d534e65a4a0bed447281bd59dd685938-1560x2988.avif"
+                src="/assets/stats-programas-mobile-1560x2988.avif"
               />
             </picture>
           </div>
@@ -1461,16 +1459,16 @@ export default function Home({
             >
               <source
                 media="(max-width: 1024px)"
-                srcSet="/assets/62af063e071796e6b8be9134436446562d2546ee-1560x2988.avif"
+                srcSet="/assets/stats-territorio-mobile-1560x2988.avif"
                 width="1560"
                 height="2988"
                 sizes="100vw"
               />
               <source
                 media="(min-width: 1025px)"
-                srcSet="/assets/71922df895a21a396b1944127ed0c09497977bfd-5760x3240.jpg"
-                width="5760"
-                height="3240"
+                srcSet="/assets/stats-territorio-desktop-2880x1620.avif"
+                width="2880"
+                height="1620"
                 sizes="100vw"
               />
               <img
@@ -1486,7 +1484,7 @@ export default function Home({
                   willChange: "transform",
                 }}
                 sizes="100vw"
-                src="/assets/62af063e071796e6b8be9134436446562d2546ee-1560x2988.avif"
+                src="/assets/stats-territorio-mobile-1560x2988.avif"
               />
             </picture>
           </div>
@@ -1614,7 +1612,7 @@ export default function Home({
               <a
                 className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textWhite__iuxA3 text_cta__jYwZ7 statsBanner_button__qW4OO"
                 target="_self"
-                href="/impact"
+                href="#indicadores"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -1634,7 +1632,7 @@ export default function Home({
           </div>
         </div>
       </section>
-      <section className="callToAction_root__si_1l callToAction_location__Yxb2D">
+      <section className="callToAction_root__si_1l callToAction_location__Yxb2D" id="contacto">
         <div className="callToAction_content__HJTLC">
           <div className="callToAction_tag__J9MPX text_tag__kpI4A">
             <svg
@@ -1691,7 +1689,7 @@ export default function Home({
             <a
               className="button_root__fMfbx button_fill__dFeum button_colorGreen__wmPps button_textBlack__AagpH text_cta__jYwZ7 callToAction_button__JtFqK"
               target="_self"
-              href="/about"
+              href="#team-block"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

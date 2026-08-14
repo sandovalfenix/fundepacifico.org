@@ -1,0 +1,374 @@
+{
+  "pipeline_version": 5,
+  "slots": {
+    "apple-touch-icon": {
+      "encoded_quality": null,
+      "out_bytes": 17632,
+      "out_sha256": "f8bed08a8842dc103a603bdcdf87ea0ced9db802e8db39e0ae5851678ae46c35",
+      "params_sha256": "152ef73898fabfa66b79554faeb9143f3c130c054ca6b182441778a189dcf587",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "brand-isotype": {
+      "encoded_quality": null,
+      "out_bytes": 156426,
+      "out_sha256": "4cce4c4434b969a03a46bcdab536a29f548c44cf35f6e60f4e473b30c13e7537",
+      "params_sha256": "5e54aa6ffe587f5bf64a273b18fba8f60f72c0f917279d3a450254874b4329f6",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "favicon-16": {
+      "encoded_quality": null,
+      "out_bytes": 872,
+      "out_sha256": "da23fb6a0a696466ab0f8767cac642133063eaf1bfc3724212768e6252ac583d",
+      "params_sha256": "c218f48ee701e20d5685952279cda63e4d8e88b7c949b8140bb946168e09e018",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "favicon-32": {
+      "encoded_quality": null,
+      "out_bytes": 2288,
+      "out_sha256": "eb23da8643453b8931e7b17a128208cfa10ff49c7470bd57b9d5234777a2255b",
+      "params_sha256": "b581c81bbd21f22bd0a613011f7478f12dfe0ea3d434e1777869cc8d40f6013f",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "favicon-ico": {
+      "encoded_quality": null,
+      "out_bytes": 7497,
+      "out_sha256": "a13f860aa90cbcd6ba11b0cb9bf1aef20a80c6323b46bdf1726bf1ca61bd07cc",
+      "params_sha256": "4a5f713df92fee0bd820075b8853547a7a71e1bef760ef006cfff12c9e28acf4",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "gallery-panorama-01": {
+      "encoded_quality": 45,
+      "out_bytes": 50744,
+      "out_sha256": "26df40efc48fe591ea1de449ad7b1dd7e7433e0941a210b7a8e5bb6b44b64b12",
+      "params_sha256": "766334df9d41f8c7beb999827e0149148166261c78a8dc9712d706375c128710",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "384dbaa04413e9b31c776ae6c04ac7f2bfc0a094596e0adc1e0b449e3fc78a4c",
+        "aeb66668312bb5e6139bb4eccb0e0d28a6630ae4fd9dbc6b238f285d6c712b81",
+        "c716bf29ae646afafe378dbedb83e7aad4bd0ed06b5dd38ba5c7317046863562"
+      ],
+      "upscale": [
+        4.315,
+        6.05,
+        5.095
+      ]
+    },
+    "gallery-panorama-02": {
+      "encoded_quality": 45,
+      "out_bytes": 68388,
+      "out_sha256": "fc71279fa91d0de8cf997504f19e8d7e4de911f587ec82f04c20446fe3abd989",
+      "params_sha256": "0b9c5c19cef1ec790e0fc645988406fd069f9f026e18a708b29b8fd6819e6a96",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "4696d4d5f54cad9682c3bf6cda17aac2d7ac7f6645c0bf6c3011be7d0567fe55",
+        "9e47f9f8540ec3c4e0bac8807a05580cc14cfe5787cc801ad7c60ba762f35263"
+      ],
+      "upscale": [
+        3.119,
+        7.112
+      ]
+    },
+    "media-banner-compromiso": {
+      "encoded_quality": 45,
+      "out_bytes": 34014,
+      "out_sha256": "0211ca7dfe01af3d765d92800d7228f977cb1e44826f8ec9f974847b93570330",
+      "params_sha256": "7869e554461dca3616113db71a31a6af7b4b37040735e6983a1366249d5b359d",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d514e981b3279337c74842a6d574a84c77e35f49179dc72c63e3fa1ce2b059c8"
+      ],
+      "upscale": [
+        4.431
+      ]
+    },
+    "menu-que-hacemos": {
+      "encoded_quality": 45,
+      "out_bytes": 11843,
+      "out_sha256": "3bed3e62a9797b4a59062f4daafe53b167df87acb466f7921b2abebf16591922",
+      "params_sha256": "783ce1e8a3f5dee7a5170e9c60b2293c7c9750f9e1e8c493cd200c40e78be084",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "8194e28a25038ed7631f0bcaa7dece337bc0cb5bb096e67c953b4394f1f45b2c"
+      ],
+      "upscale": [
+        7.319
+      ]
+    },
+    "menu-quienes-somos": {
+      "encoded_quality": 45,
+      "out_bytes": 16752,
+      "out_sha256": "242ac76b37e83089364813132cfdf3eb171310eda4189ed668fcf9052ab72ca8",
+      "params_sha256": "2c6726df4195fd01868b859f74b6511cd7651f6262bf543fe42e7a4a0b750eee",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "384dbaa04413e9b31c776ae6c04ac7f2bfc0a094596e0adc1e0b449e3fc78a4c"
+      ],
+      "upscale": [
+        5.146
+      ]
+    },
+    "og-image": {
+      "encoded_quality": 82,
+      "out_bytes": 112178,
+      "out_sha256": "d3fa9e54647d6a6be09898d314aa522bfd03489baffe32a76e08146201be2140",
+      "params_sha256": "45d8b7a26cd2764698641a94ce6c6741542f159232100c0a2bf30bcb1652f126",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9",
+        "d514e981b3279337c74842a6d574a84c77e35f49179dc72c63e3fa1ce2b059c8"
+      ],
+      "upscale": []
+    },
+    "pillar-capacitacion-formacion": {
+      "encoded_quality": 45,
+      "out_bytes": 19119,
+      "out_sha256": "3a82640b657be42effca02e2354aa4535e46fb582b1771f1c3686136d74be8bd",
+      "params_sha256": "5e26a175e416563618fbfd5221788fdf1780286fdf9995435bf0e72152776832",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "6f6ac0034b009fa4c6f8286888caf9526b11ec68cfcadadf6892e6a6273b5e0e"
+      ],
+      "upscale": [
+        5.087
+      ]
+    },
+    "pillar-emprendimiento-agroindustria": {
+      "encoded_quality": 30,
+      "out_bytes": 30192,
+      "out_sha256": "663c0af1c4c14536bd3aea37ab189eafe44c536b7bef2a4a9293a686a867246a",
+      "params_sha256": "c1b8b7610ff9586e5d83a1a2a6d6de86a93a6e30e59537d0b7391560b8c9eed7",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "3ab6bb779dcf3f0caf6bcd184af06f60c45d2524d8f19a2d64488439f3e9d18d"
+      ],
+      "upscale": [
+        2.29
+      ]
+    },
+    "pillar-obras-civiles": {
+      "encoded_quality": 32,
+      "out_bytes": 30357,
+      "out_sha256": "ed2a9be7f8fbacf786eaa6239ed708c3df8626469b5cbfaaf8acdaed07bad15b",
+      "params_sha256": "56edb2bd34fa9a9ea86d94651fac2940166f5a987a002347eab72c03e579b223",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "741d1ff084a14d8d305f50c233cbae4de899881d92730f3b9a13508be8e118e9"
+      ],
+      "upscale": [
+        4.324
+      ]
+    },
+    "pillar-redes-apoyo": {
+      "encoded_quality": 37,
+      "out_bytes": 29361,
+      "out_sha256": "2fddf4ca029ff76aa0dd9e4cc975d4a78fa610d73f5da905dc29b50182eda512",
+      "params_sha256": "994e49613ed98da8351dac615c452df373387526be2bfd8afd714897d3db27ce",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "4696d4d5f54cad9682c3bf6cda17aac2d7ac7f6645c0bf6c3011be7d0567fe55"
+      ],
+      "upscale": [
+        3.467
+      ]
+    },
+    "pillar-vivienda-digna": {
+      "encoded_quality": 45,
+      "out_bytes": 15151,
+      "out_sha256": "c207daf2e4a2f934622e78cddd66916dc827e4a7ead13cf79bec10d6817c2828",
+      "params_sha256": "c62821e238a139d049b1516974712a278bff25e7677891b564a3e1fbf04a3182",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d4240d3ce94a1395da380a1f6200d6809b45b88bd0823c3ab33e408b98ee351e"
+      ],
+      "upscale": [
+        2.696
+      ]
+    },
+    "portafolio-cover": {
+      "encoded_quality": 23,
+      "out_bytes": 12820,
+      "out_sha256": "2010d7d642b7a8af12ad2b891eef8c489e63f1e3cb0837c97650852d47d410d3",
+      "params_sha256": "66033b463a6b6b7ec32417afab5cd9009cfc18aa260e64db3b491b86a2fb92ca",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d514e981b3279337c74842a6d574a84c77e35f49179dc72c63e3fa1ce2b059c8"
+      ],
+      "upscale": [
+        1.938
+      ]
+    },
+    "pwa-icon-192": {
+      "encoded_quality": null,
+      "out_bytes": 19062,
+      "out_sha256": "0fb447f97cb8a94f03dfb8258571b166548fb94ab63b8b406ba6aa1b7d5ed516",
+      "params_sha256": "20f7cbee1a29590a5d41178480877f57f2ab303d3ec4b9520e78e0249f0d5339",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "pwa-icon-512": {
+      "encoded_quality": null,
+      "out_bytes": 83011,
+      "out_sha256": "14cdd4a9cba8736714a97604c26a3b778a703da60f2b7d261746c6d72051bb3b",
+      "params_sha256": "e5099ef167eb432944d2b080b24eae1e3b3f5a94d75dfcc9ca0b7d62fd313a96",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "pwa-maskable-512": {
+      "encoded_quality": null,
+      "out_bytes": 64398,
+      "out_sha256": "cc5ba7877fa1c8ef7d55abdefde7dc828f3c8241a3eb61e50d7d119d68bf1db9",
+      "params_sha256": "4a819c178e707a5aeb5e1e18020f7287621ba2a8679b27b20dd5c39794bf99d4",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d565a9340c66ba8aefafcbe0f40967e49923010843ef9cb9267f4f285784bea9"
+      ],
+      "upscale": []
+    },
+    "stats-institucional-desktop": {
+      "encoded_quality": 45,
+      "out_bytes": 37527,
+      "out_sha256": "12bdd5e6e2457b4b56dce6e0563bc981ab99ba54c8d0ab926d3f6c5a64aeb89b",
+      "params_sha256": "c0661619d8f499ffa1910040fd5350a7328879077789b17cca5d20d1a2ba0b38",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "6f6ac0034b009fa4c6f8286888caf9526b11ec68cfcadadf6892e6a6273b5e0e",
+        "8194e28a25038ed7631f0bcaa7dece337bc0cb5bb096e67c953b4394f1f45b2c"
+      ],
+      "upscale": [
+        4.165,
+        6.0
+      ]
+    },
+    "stats-institucional-mobile": {
+      "encoded_quality": 42,
+      "out_bytes": 32771,
+      "out_sha256": "11c7213968f34e70f67adc411d11200c2e386dffa13fa788538116d71e531e51",
+      "params_sha256": "8269e8f252465562b54973087e912c2dc706a4f3e4d5365f7625883c92a8ade3",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "6f6ac0034b009fa4c6f8286888caf9526b11ec68cfcadadf6892e6a6273b5e0e",
+        "8194e28a25038ed7631f0bcaa7dece337bc0cb5bb096e67c953b4394f1f45b2c"
+      ],
+      "upscale": [
+        4.602,
+        5.474
+      ]
+    },
+    "stats-legal-desktop": {
+      "encoded_quality": 45,
+      "out_bytes": 27912,
+      "out_sha256": "79f0956b476f8c7a3094542376bc0aa486114af8ad733678292830e290969ae8",
+      "params_sha256": "719b897491a9d446ddb2c19ab2e4601626695bdb3868a3e30789f8d6f1360cf0",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d42a9f7c6cffc766d7e6f96d2f021fe2bac3483afe945c3c1190705823863d1f",
+        "31601fd3f5cecd2005c0a0662060b9cff3d099ea38a5d6013603af66f99c0c94"
+      ],
+      "upscale": [
+        5.87,
+        8.276
+      ]
+    },
+    "stats-legal-mobile": {
+      "encoded_quality": 42,
+      "out_bytes": 25771,
+      "out_sha256": "064b5ce2db7f73a2ceac3e7e265a4e7a637cb3de743b414d69f3a911068ca5c8",
+      "params_sha256": "3cc17bfdb55fd9d2440eef2890a4f642618ae57b5d032b13def273378e6ddbac",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "d42a9f7c6cffc766d7e6f96d2f021fe2bac3483afe945c3c1190705823863d1f",
+        "31601fd3f5cecd2005c0a0662060b9cff3d099ea38a5d6013603af66f99c0c94"
+      ],
+      "upscale": [
+        6.478,
+        7.592
+      ]
+    },
+    "stats-programas-desktop": {
+      "encoded_quality": 45,
+      "out_bytes": 69680,
+      "out_sha256": "60c9076efd57c9a73a92785666a296d0af9bd0dadf18e9e08417837805345d21",
+      "params_sha256": "ca7ea4273e83c0fc98ce806b23377a518a0b0e3f8a920668deedb3640f44a2f1",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "68113b62c35d2902be2240d24a814bf01cbb8c64ddb1f5ac2d256cb9435f4265",
+        "741d1ff084a14d8d305f50c233cbae4de899881d92730f3b9a13508be8e118e9"
+      ],
+      "upscale": [
+        7.661,
+        3.546
+      ]
+    },
+    "stats-programas-mobile": {
+      "encoded_quality": 30,
+      "out_bytes": 42838,
+      "out_sha256": "fed6e1ccf7a1ab6ee9755acf6098cdeceb90a47fc65ebcbffeb83ef2a8fbbf4c",
+      "params_sha256": "96ca8da217533f19d97de6a5f5ca3ef76c382dcf318440d7688747ef81ac6e26",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "68113b62c35d2902be2240d24a814bf01cbb8c64ddb1f5ac2d256cb9435f4265",
+        "741d1ff084a14d8d305f50c233cbae4de899881d92730f3b9a13508be8e118e9"
+      ],
+      "upscale": [
+        8.434,
+        3.25
+      ]
+    },
+    "stats-territorio-desktop": {
+      "encoded_quality": 45,
+      "out_bytes": 33318,
+      "out_sha256": "3e69986006e6aeba14cee9b928d244cfb58f781f981576379d4866e66b1de067",
+      "params_sha256": "60596ad27c10730d0e03cc08180f8e742c4c68e08ac56c45325e9faf5be5af04",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "9e47f9f8540ec3c4e0bac8807a05580cc14cfe5787cc801ad7c60ba762f35263",
+        "aeb66668312bb5e6139bb4eccb0e0d28a6630ae4fd9dbc6b238f285d6c712b81"
+      ],
+      "upscale": [
+        6.491,
+        7.714
+      ]
+    },
+    "stats-territorio-mobile": {
+      "encoded_quality": 42,
+      "out_bytes": 27706,
+      "out_sha256": "fa104ec39210773ad4f8f8748946689d72b24116ef554312e2229e7848ef9c70",
+      "params_sha256": "8ee8407309cc4d241e0035d076ed1153373507b4c55c3ddb8de16bdbc94c99bc",
+      "pillow_version": "12.1.0",
+      "source_sha256": [
+        "9e47f9f8540ec3c4e0bac8807a05580cc14cfe5787cc801ad7c60ba762f35263",
+        "aeb66668312bb5e6139bb4eccb0e0d28a6630ae4fd9dbc6b238f285d6c712b81"
+      ],
+      "upscale": [
+        7.156,
+        8.715
+      ]
+    }
+  }
+}

@@ -4,28 +4,27 @@ const menuItems = [
   {
     heading: "¿Qué hacemos?",
     links: [
-      ["Vivienda digna", "/what-we-do#vivienda-digna"],
-      ["Capacitación y formación", "/what-we-do#educacion-formacion"],
-      ["Emprendimiento y agroindustria", "/what-we-do#emprendimiento-agroindustria"],
-      ["Redes de apoyo", "/what-we-do#redes-apoyo"],
+      ["Vivienda digna", "#what-we-do"],
+      ["Capacitación y formación", "#what-we-do"],
+      ["Emprendimiento y agroindustria", "#what-we-do"],
+      ["Redes de apoyo", "#what-we-do"],
     ],
   },
   {
     heading: "¿Quiénes somos?",
     links: [
-      ["Historia", "/about"],
-      ["Liderazgo", "/about#leadership"],
-      ["Valores", "/about"],
-      ["Trayectoria", "/impact"],
+      ["Historia", "#team-block"],
+      ["Liderazgo", "#team-block"],
+      ["Valores", "#team-block"],
+      ["Indicadores", "#indicadores"],
     ],
   },
   {
-    heading: "Recursos",
+    heading: "Recursos y Alianzas",
     links: [
-      ["Portafolio 2026", "/resources"],
-      ["Objeto social", "/about"],
-      ["Servicios", "/what-we-do"],
-      ["Contacto", "/contact"],
+      ["Objeto social", "#team-block"],
+      ["Servicios", "#what-we-do"],
+      ["Contacto", "#contacto"],
     ],
   },
   {
@@ -50,7 +49,7 @@ const offices = [
   {
     title: "Representante legal",
     details: [
-      ["Orlando Arrechea Orobio", "/about"],
+      ["Orlando Arrechea Orobio", "#team-block"],
       ["fundepacificoong@gmail.com", "mailto:fundepacificoong@gmail.com"],
       ["www.fundepacifico.org", "https://www.fundepacifico.org"],
     ],
@@ -79,7 +78,7 @@ function ArrowIcon({ open }) {
   );
 }
 
-export default function Footer() {
+export default function Footer({ onOpenGetInvolved }) {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
@@ -149,7 +148,11 @@ export default function Footer() {
           <div className="footer_body__RXJ8f text_p__79svp">
             Reciba novedades sobre programas, alianzas y proyectos de FUNDEPACIFICO.
           </div>
-          <button className="button_root__fMfbx button_standard__YccnH button_colorWhite__uKfX5 text_cta__jYwZ7">
+          <button
+            className="button_root__fMfbx button_standard__YccnH button_colorWhite__uKfX5 text_cta__jYwZ7"
+            onClick={onOpenGetInvolved}
+            type="button"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
               <path stroke="#1A1A1A" d="M2 7h10m0 0L6.531 2M12 7l-5.469 5"></path>
             </svg>

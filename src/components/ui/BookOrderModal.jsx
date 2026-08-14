@@ -29,7 +29,7 @@ export default function BookOrderModal({ isOpen, onClose }) {
               
               <div className="flex flex-col sm:flex-row gap-6 items-center">
                 <img
-                  src="/assets/9f4ab50d0dbb44ef00607adfcd25edb685d63cb1-928x1240.jpeg"
+                  src="/assets/portafolio-cover-928x1240.avif"
                   alt="Portafolio de Servicios FUNDEPACIFICO 2026"
                   className="w-36 h-48 object-cover rounded-xl shadow-2xl border border-slate-700 shrink-0"
                 />
@@ -52,30 +52,30 @@ export default function BookOrderModal({ isOpen, onClose }) {
                 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   <a
-                    href="https://www.amazon.co.uk"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="#team-block"
+                    target="_self"
                     className="p-3 bg-slate-900 border border-slate-700 hover:border-brand-lime rounded-xl text-left transition-colors group block"
+                    onClick={onClose}
                   >
                     <p className="text-xs font-bold text-white group-hover:text-brand-lime">Objeto social</p>
                     <p className="text-[11px] text-slate-400">Derechos e inclusion</p>
                   </a>
 
                   <a
-                    href="https://www.amazon.co.uk"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="#what-we-do"
+                    target="_self"
                     className="p-3 bg-slate-900 border border-slate-700 hover:border-brand-lime rounded-xl text-left transition-colors group block"
+                    onClick={onClose}
                   >
                     <p className="text-xs font-bold text-white group-hover:text-brand-lime">Pilares</p>
                     <p className="text-[11px] text-slate-400">Programas comunitarios</p>
                   </a>
 
                   <a
-                    href="https://www.audible.com"
-                    target="_blank"
-                    rel="noreferrer"
+                    href="#contacto"
+                    target="_self"
                     className="p-3 bg-slate-900 border border-slate-700 hover:border-brand-lime rounded-xl text-left transition-colors group block"
+                    onClick={onClose}
                   >
                     <p className="text-xs font-bold text-white group-hover:text-brand-lime">Contacto</p>
                     <p className="text-[11px] text-slate-400">Buenaventura, Valle</p>

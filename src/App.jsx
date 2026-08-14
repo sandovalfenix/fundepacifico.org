@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import GetInvolvedModal from './components/ui/GetInvolvedModal';
@@ -7,12 +7,6 @@ import JNSOfferLetterModal from './components/ui/JNSOfferLetterModal';
 import BookOrderModal from './components/ui/BookOrderModal';
 
 import Home from './pages/Home';
-import WhatWeDo from './pages/WhatWeDo';
-import AboutUs from './pages/AboutUs';
-import OurImpact from './pages/OurImpact';
-import Grantees from './pages/Grantees';
-import Resources from './pages/Resources';
-import Contact from './pages/Contact';
 
 function SiteTransition({ children }) {
   const location = useLocation();
@@ -132,18 +126,7 @@ function SiteRoutes({
             />
           }
         />
-        <Route
-          path="/what-we-do"
-          element={<WhatWeDo onOpenGetInvolved={onOpenGetInvolved} />}
-        />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/impact" element={<OurImpact />} />
-        <Route
-          path="/grantees"
-          element={<Grantees onOpenJnsModal={onOpenJnsModal} />}
-        />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
       <Footer onOpenGetInvolved={onOpenGetInvolved} />
