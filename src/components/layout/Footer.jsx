@@ -50,7 +50,10 @@ const offices = [
     title: "Representante legal",
     details: [
       ["Orlando Arrechea Orobio", "#team-block"],
-      ["fundepacificoong@gmail.com", "mailto:fundepacificoong@gmail.com"],
+      [
+        "director.ejecutivo@fundepacifico.org",
+        "mailto:director.ejecutivo@fundepacifico.org",
+      ],
       ["www.fundepacifico.org", "https://www.fundepacifico.org"],
     ],
   },

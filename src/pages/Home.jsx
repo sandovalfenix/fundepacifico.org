@@ -601,7 +601,7 @@ export default function Home({
               </div>
             </div>
             <div className="text_p__79svp teamBlock_body__CaNZb">
-              <span>Orlando</span>
+              <span>Orlando</span>{" "}
               <span>Arrechea Orobio</span>
             </div>
           </a>

@@ -88,7 +88,7 @@ export const siteData = {
       city: "Representante legal",
       address: "Orlando Arrechea Orobio, Consultivo Departamental de Comunidades Negras del Valle del Cauca",
       phone: "+57 316 228 3235",
-      email: "fundepacificoong@gmail.com",
+      email: "director.ejecutivo@fundepacifico.org",
     },
   ],
 };

@@ -10,3 +10,4 @@ yarn-error.log*
 pnpm-debug.log*
 .codex-vite*.log
 .codex-preview*.log
+firebase-debug.log*
